@@ -1,5 +1,5 @@
 {
-  "npm.packageManager": "pnpm",
+  "npm.packageManager": "npm",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
@@ -15,18 +15,18 @@
   "prettier.configPath": ".prettierrc",
   "typescript.tsdk": "node_modules/typescript/lib",
   "files.exclude": {
-    "next-env.d.ts": true,
-    "node_modules": true,
-    ".idea": true,
-    ".vscode": true,
-    ".next": true,
+    // "next-env.d.ts": true,
+    // "node_modules": true,
+    // ".idea": true,
+    // ".vscode": true,
+    // ".next": true,
     // ".gitignore": true,
     // ".prettierignore": true,
     // ".prettierrc": true,
     // "eslint.config.mjs": true,
-    "next.config.ts": true,
-    "pnpm-lock.yaml": true,
-    "postcss.config.mjs": true,
-    ".lintstagedrc.js": true
+    // "next.config.ts": true,
+    // "pnpm-lock.yaml": true,
+    // "postcss.config.mjs": true,
+    // ".lintstagedrc.js": true
   }
 }
