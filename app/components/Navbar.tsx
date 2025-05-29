@@ -38,17 +38,18 @@ export function Navbar() {
           <NavigationMenuList>
             {routes.map((route) => (
               <NavigationMenuItem key={route.path}>
-                <Link href={route.path} legacyBehavior passHref>
-                  <NavigationMenuLink 
+                <NavigationMenuLink asChild>
+                  <Link 
+                    href={route.path}
                     className={cn(
                       navigationMenuTriggerStyle(),
                       "bg-black text-white hover:bg-white hover:text-black transition-colors",
-                      pathname === route.path && "bg-white-700" 
+                      pathname === route.path && "bg-gray-700" 
                     )}
                   >
                     {route.name}
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
