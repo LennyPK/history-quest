@@ -1,0 +1,32 @@
+{
+  "main": {
+    "description": "A global conflict that reshaped the political and social landscape of the 20th century.",
+    "period": "1939-1945"
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/World_War_II",
+      "title": "The Second World War",
+      "author": "John Doe"
+    },
+    {
+      "title": "The Second World War",
+      "url": "https://en.wikipedia.org/wiki/World_War_II",
+      "author": "Jane Doe"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "1939-09-01",
+      "heading": "Germany invades Poland",
+      "text": "Germany invades Poland, marking the beginning of World War II.",
+      "place": "Poland"
+    },
+    {
+      "date": "1941-12-07",
+      "heading": "Japan attacks Pearl Harbor",
+      "text": "Japan attacks Pearl Harbor, drawing the United States into the war.",
+      "place": "Pearl Harbor"
+    }
+  ]
+}
