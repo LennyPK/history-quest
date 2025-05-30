@@ -1,6 +1,7 @@
 "use client"
-import eventsData from "@/lib/data/eventdata.json"
+
 import { HistoricEvent } from "@/lib/types/event"
+import { getAllEvents } from "@/lib/utils/events"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 import EventItem from "./EventItem"
@@ -8,13 +9,13 @@ import EventItem from "./EventItem"
 export default function EventsPage() {
   const router = useRouter()
   const [selectedEvent, setSelectedEvent] = useState<HistoricEvent | null>(null)
-  const events = eventsData as HistoricEvent[]
+  const events = getAllEvents()
 
   const handleEventClick = (event: HistoricEvent) => {
     if (event.isFullyImplemented) {
       setSelectedEvent(event)
       console.log("Navigating to event:", event.name)
-      router.push(`/events/timeline?id=${event.id}`)
+      router.push(`/events/${event.id}`)
     }
   }
 

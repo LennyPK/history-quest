@@ -1,0 +1,154 @@
+{
+  "events": [
+    {
+      "id": "world-war-two",
+      "name": "World War II",
+      "difficulty": 4,
+      "date": "1939-1945",
+      "blurb": "A global conflict that reshaped the political and social landscape of the 20th century.",
+      "imageUrl": "/images/ww2.png",
+      "isFullyImplemented": true,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/World_War_II",
+          "title": "The Second World War",
+          "author": "John Doe"
+        },
+        {
+          "title": "The Second World War",
+          "url": "https://en.wikipedia.org/wiki/World_War_II",
+          "author": "Jane Doe"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "1939-09-01",
+          "heading": "Germany invades Poland",
+          "text": "Germany invades Poland, marking the beginning of World War II.",
+          "place": "Poland"
+        },
+        {
+          "date": "1941-12-07",
+          "heading": "Japan attacks Pearl Harbor",
+          "text": "Japan attacks Pearl Harbor, drawing the United States into the war.",
+          "place": "Pearl Harbor"
+        }
+      ]
+    },
+    {
+      "id": "french-revolution",
+      "name": "French Revolution",
+      "difficulty": 3,
+      "date": "1789-1799",
+      "blurb": "A period of radical social and political upheaval in France.",
+      "imageUrl": "/images/french-revolution.jpg",
+      "isFullyImplemented": false,
+      "description": "A period of radical social and political upheaval in France that had a major impact on France and throughout Europe.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/French_Revolution",
+          "title": "The French Revolution",
+          "author": "Historical Society"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "1789-07-14",
+          "heading": "Storming of the Bastille",
+          "text": "The storming of the Bastille prison marks the beginning of the French Revolution.",
+          "place": "Paris"
+        }
+      ]
+    },
+    {
+      "id": "moon-landing",
+      "name": "Apollo 11 Moon Landing",
+      "difficulty": 3,
+      "date": "1961-1972",
+      "blurb": "First human mission to land on the Moon, fulfilling Kennedy's ambitious goal.",
+      "imageUrl": "/images/moon-landing.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "jfk-assassination",
+      "name": "JFK Assassination",
+      "difficulty": 5,
+      "date": "1961-1963",
+      "blurb": "The shocking assassination of President Kennedy that changed America forever.",
+      "imageUrl": "/images/jfk.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "pearl-harbor",
+      "name": "Attack on Pearl Harbor",
+      "difficulty": 4,
+      "date": "1941-1945",
+      "blurb": "The surprise attack that brought the United States into World War II.",
+      "imageUrl": "/images/pearl-harbor.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "civil-rights-march",
+      "name": "March on Washington",
+      "difficulty": 2,
+      "date": "1954-1968",
+      "blurb": "The historic march where Martin Luther King Jr. delivered his 'I Have a Dream' speech.",
+      "imageUrl": "/images/march-washington.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "titanic-sinking",
+      "name": "Sinking of the Titanic",
+      "difficulty": 3,
+      "date": "1912",
+      "blurb": "The 'unsinkable' ship's tragic maiden voyage that shocked the world.",
+      "imageUrl": "/images/titanic.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "boston-tea-party",
+      "name": "Boston Tea Party",
+      "difficulty": 2,
+      "date": "1765-1783",
+      "blurb": "Colonial protest against British taxation that helped spark the American Revolution.",
+      "imageUrl": "/images/boston-tea-party.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "cuban-missile-crisis",
+      "name": "Cuban Missile Crisis",
+      "difficulty": 5,
+      "date": "1962",
+      "blurb": "The closest the world came to nuclear war during the Cold War standoff.",
+      "imageUrl": "/images/cuban-missile.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "stock-market-crash",
+      "name": "Wall Street Crash of 1929",
+      "difficulty": 4,
+      "date": "1929-1939",
+      "blurb": "Black Tuesday marked the beginning of the Great Depression.",
+      "imageUrl": "/images/wall-street-crash.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "hiroshima-bombing",
+      "name": "Atomic Bombing of Hiroshima",
+      "difficulty": 5,
+      "date": "1945",
+      "blurb": "The first use of nuclear weapons in warfare that changed history forever.",
+      "imageUrl": "/images/hiroshima.jpg",
+      "isFullyImplemented": false
+    },
+    {
+      "id": "watergate-scandal",
+      "name": "Watergate Scandal",
+      "difficulty": 4,
+      "date": "1972-1974",
+      "blurb": "The political scandal that led to President Nixon's resignation.",
+      "imageUrl": "/images/watergate.jpg",
+      "isFullyImplemented": false
+    }
+  ]
+}
