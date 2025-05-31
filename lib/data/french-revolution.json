@@ -1,0 +1,84 @@
+{
+  "main": {
+    "description": "A global conflict that reshaped the political and social landscape of the 20th century.",
+    "period": "1789-1799"
+  },
+  "sources": [
+    {
+      "url": "https://byjus.com/free-ias-prep/french-revolution-1789-1799/",
+      "title": "French Revolution",
+      "author": "John Doe"
+    },
+    {
+      "title": "The March on Versailles",
+      "url": "https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/the-march-on-versailles/#:~:text=5%3A%20The%20March%20on%20Versailles,royals%20to%20return%20to%20Paris",
+      "author": "John Doe"
+    },
+    {
+      "title": "Key Events of the French Revolution to Know for European Art and Civilization – 1400 to Present",
+      "url": "https://library.fiveable.me/lists/key-events-of-the-french-revolution",
+      "author": "John Doe"
+    },
+    {
+      "title": "7 Facts about the French Revolution You must know",
+      "url": "https://www.frenchclass.in/blog/facts-on-french-revolution/",
+      "author": "Vibya Goyal"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "1789-05-05",
+      "heading": "Estates-General convenes",
+      "text": " King Louis XVI called an assembly to address his country's financial crisis, but it ultimately failed to resolve the tension between the estates.",
+      "place": "Versailles"
+    },
+    {
+      "date": "1789-06",
+      "heading": "National Assembly formed",
+      "text": "Due to tensions from the Estates-General, the Third Estate declared itself as the National Assembly. Pledging not to disperse until they give France a new constitution.",
+      "place": "Paris"
+    },
+    {
+      "date": "1789-07-14",
+      "heading": "Storming of the Bastille",
+      "text": "Angry Parisians stormed the Bastille fortress, a symbol of royal tyranny. The King yielded to this, recognising the sovereignty of his people, marking the start of the revolution.",
+      "place": "Paris"
+    },
+    {
+      "date": "1789-08-26",
+      "heading": "Declaration of the Rights of Man and of the Citizen",
+      "text": "Document expressing principles of liberty, equality and fraternity, inspired by Enlightenment ideologies.",
+      "place": "Paris"
+    },
+    {
+      "date": "1789-10-05",
+      "heading": "Women’s March on Versailles",
+      "text": "Concerned over the high price of bread, thousands of women rioted and marched to Versailles. Forcing the royals to return to Paris with them.",
+      "place": "Versailles"
+    },
+    {
+      "date": "1793-01-21",
+      "heading": "Execution of Louis XVI",
+      "text": "Marked the end of the monarchy and the establishment of the First French Republic. Louis XVI was executed by the guillotine for treason, exhibiting the revolution's radical turn. His execution shocked Europe and increased tensions across other monarchies.",
+      "place": "Paris"
+    },
+    {
+      "date": "1793 - 1794",
+      "heading": "Reign of Terror",
+      "text": "Led by Robespierre, this period saw mass executions of enemies of the revolution, including King Louis XVI and Queen Marie Antoinette. Resulted in the deaths of thousands, including revolutionaries and created an atmosphere of fear.",
+      "place": "France"
+    },
+    {
+      "date": "1794-07-27",
+      "heading": "Fall of Robespierre",
+      "text": "Maximillien Robespierre was arrested and executed by his political rivals. This marked the end of the Reign of Terror into a more moderate phase of the revolution. The execution represented a rejection of radicalism, and France’s stability rose.",
+      "place": "Paris"
+    },
+    {
+      "date": "1799-11-09",
+      "heading": "Rise of Napoleon Bonaparte",
+      "text": "Napoleon staged and seized power in a coup d'état, ending the revolutionary government and establishing himself as leader. France transitioned from revolutionary ideals to authoritarian rule.",
+      "place": "France"
+    }
+  ]
+}
