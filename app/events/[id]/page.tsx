@@ -1,6 +1,7 @@
 "use client"
 
 import { ProgressBadge } from "@/components/progress-badge"
+import Quiz from "@/components/quiz"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { getEventById } from "@/lib/utils/events"
@@ -125,7 +126,7 @@ export default function EventPage({ params }: EventPageProps) {
         <TabsContent value="quiz" className="mt-6">
           <Card>
             <CardContent className="pt-6">
-              <span>Quiz goes here</span>
+              <Quiz />
             </CardContent>
           </Card>
         </TabsContent>

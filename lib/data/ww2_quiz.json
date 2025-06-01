@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "question": "When did World War II begin?",
+    "options": ["1914", "1939", "1945", "1963"],
+    "answer": "1939"
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "question": "Who was the leader of Nazi Germany?",
+    "options": ["Joseph Stalin", "Franklin D. Roosevelt", "Adolf Hitler", "Winston Churchill"],
+    "answer": "Adolf Hitler"
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "question": "Which country was attacked at Pearl Harbor?",
+    "options": ["Japan", "Germany", "United Kingdom", "United States"],
+    "answer": "United States"
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "question": "What does D-Day refer to?",
+    "options": [
+      "Germany’s invasion of Poland",
+      "End of the war",
+      "Allied invasion of Normandy",
+      "Japan’s surrender"
+    ],
+    "answer": "Allied invasion of Normandy"
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "question": "Which two cities were hit with atomic bombs in 1945?",
+    "options": [
+      "Tokyo and Osaka",
+      "Hiroshima and Nagasaki",
+      "Berlin and Paris",
+      "Seoul and Beijing"
+    ],
+    "answer": "Hiroshima and Nagasaki"
+  },
+  {
+    "id": 6,
+    "difficulty": "medium",
+    "question": "Which treaty ended World War I and contributed to WWII?",
+    "options": [
+      "Treaty of Brest-Litovsk",
+      "Treaty of Paris",
+      "Treaty of Versailles",
+      "Geneva Convention"
+    ],
+    "answer": "Treaty of Versailles"
+  },
+  {
+    "id": 7,
+    "difficulty": "medium",
+    "question": "Who was the British Prime Minister during most of World War II?",
+    "options": ["Neville Chamberlain", "Margaret Thatcher", "Winston Churchill", "Tony Blair"],
+    "answer": "Winston Churchill"
+  },
+  {
+    "id": 8,
+    "difficulty": "medium",
+    "question": "What is ‘Blitzkrieg’?",
+    "options": [
+      "A German tank",
+      "A military base",
+      "A fast and surprise attack strategy",
+      "A British air defense system"
+    ],
+    "answer": "A fast and surprise attack strategy"
+  },
+  {
+    "id": 9,
+    "difficulty": "medium",
+    "question": "Which battle marked a turning point on the Eastern Front?",
+    "options": [
+      "Battle of Midway",
+      "Battle of the Bulge",
+      "Battle of Stalingrad",
+      "Battle of El Alamein"
+    ],
+    "answer": "Battle of Stalingrad"
+  },
+  {
+    "id": 10,
+    "difficulty": "medium",
+    "question": "What was the U.S. program to develop atomic bombs called?",
+    "options": ["Apollo Mission", "Cold Fusion", "Operation Thunder", "Manhattan Project"],
+    "answer": "Manhattan Project"
+  },
+  {
+    "id": 11,
+    "difficulty": "hard",
+    "question": "When did Germany officially surrender in WWII?",
+    "options": ["May 1, 1944", "May 7, 1945", "June 6, 1944", "August 9, 1945"],
+    "answer": "May 7, 1945"
+  },
+  {
+    "id": 12,
+    "difficulty": "hard",
+    "question": "What 1945 conference planned post-war Europe and UN formation?",
+    "options": [
+      "Geneva Conference",
+      "Potsdam Conference",
+      "Yalta Conference",
+      "Versailles Conference"
+    ],
+    "answer": "Yalta Conference"
+  },
+  {
+    "id": 13,
+    "difficulty": "hard",
+    "question": "What was the codename for Germany’s invasion of the Soviet Union?",
+    "options": [
+      "Operation Torch",
+      "Operation Sea Lion",
+      "Operation Overlord",
+      "Operation Barbarossa"
+    ],
+    "answer": "Operation Barbarossa"
+  },
+  {
+    "id": 14,
+    "difficulty": "hard",
+    "question": "Who was the Supreme Allied Commander in Europe?",
+    "options": [
+      "George S. Patton",
+      "Douglas MacArthur",
+      "Dwight D. Eisenhower",
+      "Bernard Montgomery"
+    ],
+    "answer": "Dwight D. Eisenhower"
+  },
+  {
+    "id": 15,
+    "difficulty": "hard",
+    "question": "What were the trials of Nazi leaders for war crimes called?",
+    "options": ["Geneva Trials", "Berlin Courts", "Nuremberg Trials", "Axis Tribunal"],
+    "answer": "Nuremberg Trials"
+  }
+]
