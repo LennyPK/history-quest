@@ -45,26 +45,25 @@ export default function SourceList({ sources }: SourceListProps) {
                   </div>
                   <div className="flex flex-col space-y-2">
                     <div className="flex items-center gap-2">
-                      <strong className="text-gray-900 transition-colors duration-200 group-hover:text-blue-600">
-                        {source.title}
-                      </strong>
+                      {source.url ? (
+                        <a
+                          href={source.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 font-semibold text-gray-900 transition-colors duration-200 group-hover:text-blue-600"
+                        >
+                          {source.title}
+                          <ExternalLink className="h-3 w-3" />
+                        </a>
+                      ) : (
+                        <strong className="text-gray-900">{source.title}</strong>
+                      )}
                       <span className="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600">
                         {source.type}
                       </span>
                     </div>
                     {source.author && (
                       <span className="text-sm text-gray-600">by {source.author}</span>
-                    )}
-                    {source.url && (
-                      <a
-                        href={source.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-sm text-blue-600 transition-colors duration-200 hover:text-blue-700"
-                      >
-                        {source.url}
-                        <ExternalLink className="h-3 w-3" />
-                      </a>
                     )}
                   </div>
                 </div>
