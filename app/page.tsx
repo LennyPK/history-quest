@@ -7,24 +7,25 @@ export default function Home() {
     <div className="flex min-h-screen justify-center">
       <div className="w-full max-w-7xl px-4 text-center">
         <div className="relative mb-12 w-full">
-            <div className="absolute inset-0">
-              <Image
-                src="/images/main-bg.png"
-                alt="Historical classroom"
-                fill
-                className="object-cover brightness-[0.3]"
-                priority
-              />
-            </div>
-            <div className="relative px-4 py-16">
-              <h1 className="mb-4 text-5xl font-bold text-white">Welcome to HistoryQuest!</h1>
-              <p className="mx-auto max-w-2xl text-lg text-gray-200">
-                Discover important events that shaped our world through interactive lessons and quizzes.
-                <br />
-                Select a time period below to begin your journey.
-              </p>
-            </div>
+          <div className="absolute inset-0">
+            <Image
+              src="/images/main-bg.png"
+              alt="Historical classroom"
+              fill
+              className="object-cover brightness-[0.3]"
+              priority
+            />
           </div>
+          <div className="relative px-4 py-16">
+            <h1 className="mb-4 text-5xl font-bold text-white">Welcome to HistoryQuest!</h1>
+            <p className="mx-auto max-w-2xl text-lg text-gray-200">
+              Discover important events that shaped our world through interactive lessons and
+              quizzes.
+              <br />
+              Select a time period below to begin your journey.
+            </p>
+          </div>
+        </div>
 
         <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2">
           {/* Event Box 1 */}
@@ -44,9 +45,11 @@ export default function Home() {
             <p className="mb-4 w-full text-left text-sm text-gray-600">
               Explore the major conflicts that shaped the 20th century.
             </p>
-            <button className="mt-auto w-full rounded border border-transparent bg-black px-4 py-2 font-semibold text-white transition hover:border-black hover:bg-gray-100 hover:text-black">
-              Explore Event
-            </button>
+            <Link href="/events/world-war-two" className="mt-auto w-full">
+              <button className="mt-auto w-full cursor-pointer rounded border border-transparent bg-black px-4 py-2 font-semibold text-white transition hover:border-black hover:bg-gray-100 hover:text-black">
+                Explore Event
+              </button>
+            </Link>
           </div>
           {/* Event Box 2 */}
           <div className="flex flex-col items-center rounded-lg border bg-white p-6 shadow transition">
@@ -65,9 +68,11 @@ export default function Home() {
             <p className="mb-4 w-full text-left text-sm text-gray-600">
               Political and social upheaval that transformed France and spread revolutionary ideas.
             </p>
-            <button className="mt-auto w-full rounded border border-transparent bg-black px-4 py-2 font-semibold text-white transition hover:border-black hover:bg-gray-100 hover:text-black">
-              Explore Event
-            </button>
+            <Link href="/events/french-revolution" className="mt-auto w-full">
+              <button className="mt-auto w-full cursor-pointer rounded border border-transparent bg-black px-4 py-2 font-semibold text-white transition hover:border-black hover:bg-gray-100 hover:text-black">
+                Explore Event
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -77,8 +82,8 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {/* Feature 1 */}
             <div className="flex flex-col items-center">
-              <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gray-200">
-                <Clock className="h-6 w-6 text-gray-700" />
+              <span className="h-15 w-15 mb-4 flex items-center justify-center rounded-full bg-gray-200">
+                <Clock className="h-9 w-9 text-gray-700" />
               </span>
               <h3 className="mb-2 text-lg font-semibold">Interactive Timelines</h3>
               <p className="text-sm text-gray-600">
@@ -88,8 +93,8 @@ export default function Home() {
             </div>
             {/* Feature 2 */}
             <div className="flex flex-col items-center">
-              <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gray-200">
-                <Globe className="h-6 w-6 text-gray-700" />
+              <span className="h-15 w-15 mb-4 flex items-center justify-center rounded-full bg-gray-200">
+                <Globe className="h-9 w-9 text-gray-700" />
               </span>
               <h3 className="mb-2 text-lg font-semibold">Dynamic Maps</h3>
               <p className="text-sm text-gray-600">
@@ -98,8 +103,8 @@ export default function Home() {
             </div>
             {/* Feature 3 */}
             <div className="flex flex-col items-center">
-              <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gray-200">
-                <BadgeCheck className="h-6 w-6 text-gray-700" />
+              <span className="h-15 w-15 mb-4 flex items-center justify-center rounded-full bg-gray-200">
+                <BadgeCheck className="h-9 w-9 text-gray-700" />
               </span>
               <h3 className="mb-2 text-lg font-semibold">Knowledge Checks</h3>
               <p className="text-sm text-gray-600">
