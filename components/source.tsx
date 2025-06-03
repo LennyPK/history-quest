@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Source, SourceType } from "@/lib/types/event"
 import { Book, ExternalLink, FileText, Globe, Newspaper, Video } from "lucide-react"
-import Image from "next/image"
 
 interface SourceListProps {
   sources: Source[]
@@ -29,19 +28,12 @@ export default function SourceList({ sources }: SourceListProps) {
                 key={idx}
                 className="group rounded-lg border border-gray-100 p-4 transition-all duration-200 hover:border-blue-100 hover:bg-blue-50/50"
               >
-                <div className="flex items-start gap-4">
+                <div
+                  className="flex items-start gap-4"
+                  onClick={() => window.open(source.url, "_blank")}
+                >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gray-50">
-                    {source.faviconUrl ? (
-                      <Image
-                        src={source.faviconUrl}
-                        alt={`${source.title} favicon`}
-                        width={20}
-                        height={20}
-                        className="h-5 w-5"
-                      />
-                    ) : (
-                      <TypeIcon className="h-5 w-5 text-gray-500" />
-                    )}
+                    <TypeIcon className="h-5 w-5 text-gray-500" />
                   </div>
                   <div className="flex flex-col space-y-2">
                     <div className="flex items-center gap-2">

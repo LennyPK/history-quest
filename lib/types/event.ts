@@ -18,7 +18,6 @@ export interface Source {
   title: string
   author: string
   type: SourceType
-  faviconUrl?: string
 }
 
 export interface TimelineEvent {
