@@ -371,27 +371,53 @@
       "sources": [
         {
           "url": "https://byjus.com/free-ias-prep/french-revolution-1789-1799/",
-          "title": "French Revolution",
-          "author": "John Doe",
-          "type": "other"
+          "title": "French Revolution: A Comprehensive Guide",
+          "description": "Detailed analysis of the French Revolution's causes, events, and impact on modern society.",
+          "date": "2024-01-10",
+          "author": "Educational Institute",
+          "hasImage": false,
+          "type": "document"
         },
         {
-          "title": "The March on Versailles",
-          "url": "https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/the-march-on-versailles/#:~:text=5%3A%20The%20March%20on%20Versailles,royals%20to%20return%20to%20Paris",
-          "author": "John Doe",
-          "type": "other"
+          "url": "https://example.com/revolution-paintings",
+          "title": "Art of the French Revolution",
+          "description": "Collection of paintings and artworks depicting key moments of the revolution.",
+          "thumbnail": "/images/french-revolution/declaration-rights.jpg",
+          "date": "2023-12-15",
+          "author": "Louvre Museum",
+          "location": "Paris, France",
+          "hasImage": true,
+          "type": "photo"
         },
         {
-          "title": "Key Events of the French Revolution to Know for European Art and Civilization – 1400 to Present",
-          "url": "https://library.fiveable.me/lists/key-events-of-the-french-revolution",
-          "author": "John Doe",
-          "type": "other"
+          "url": "https://example.com/revolution-newspapers",
+          "title": "Revolutionary Newspapers Archive",
+          "description": "Original newspapers and pamphlets from the revolutionary period.",
+          "date": "2023-11-20",
+          "author": "National Library of France",
+          "location": "Paris, France",
+          "hasImage": false,
+          "type": "newspaper"
         },
         {
-          "title": "7 Facts about the French Revolution You Must Know",
-          "url": "https://www.frenchclass.in/blog/facts-on-french-revolution/",
-          "author": "Vibya Goyal",
-          "type": "other"
+          "url": "https://example.com/revolution-documentary",
+          "title": "The French Revolution: A Documentary",
+          "description": "Award-winning documentary series exploring the revolution's impact on modern democracy.",
+          "thumbnail": "/images/french-revolution/doc.jpg",
+          "date": "2023-10-05",
+          "author": "BBC History",
+          "hasImage": true,
+          "type": "video"
+        },
+        {
+          "url": "https://example.com/revolution-letters",
+          "title": "Personal Letters from the Revolution",
+          "description": "Collection of personal correspondence from key figures during the revolution.",
+          "date": "2023-09-15",
+          "author": "Historical Archives",
+          "location": "Versailles",
+          "hasImage": false,
+          "type": "document"
         }
       ],
       "timeline": [
