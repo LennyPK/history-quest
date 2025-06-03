@@ -1,9 +1,9 @@
 "use client"
 
-import EventDetails from "@/components/event-details"
-import { ProgressBadge } from "@/components/progress-badge"
-import SourceList from "@/components/source"
 import CommentsSheet from "@/components/comments_sheet"
+import EventDetails from "@/components/event-details"
+import MapComponent from "@/components/MapComponent"
+import { ProgressBadge } from "@/components/progress-badge"
 import Quiz from "@/components/quiz"
 import SourceList from "@/components/source"
 import { Timeline } from "@/components/timeline"
@@ -13,8 +13,7 @@ import { getEventById } from "@/lib/utils/events"
 import { ArrowLeft, BookOpen, Clock, Globe, HelpCircle, Newspaper, Trophy } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { useState, use } from "react"
-import MapComponent from "@/components/MapComponent"
+import { use, useState } from "react"
 
 interface EventPageProps {
   params: Promise<{
@@ -115,7 +114,7 @@ export default function EventPage({ params }: EventPageProps) {
         <TabsContent value="map" className="mt-6">
           <Card>
             <CardContent className="pt-0">
-              <div className="w-full h-full relative">
+              <div className="relative h-full w-full">
                 <MapComponent eventId={resolvedParams.id} setActiveTab={setActiveTab} />
               </div>
             </CardContent>
