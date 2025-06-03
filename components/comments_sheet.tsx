@@ -207,7 +207,7 @@ export default function CommentsSheet({ eventId = "default" }: CommentsSheetProp
         </SheetHeader>
 
         <div className="flex h-[calc(100vh-8rem)] flex-col">
-          <div className="space-y-6 px-6">
+          <div className="flex-none space-y-6 px-6">
             {/* Comment Form */}
             <form onSubmit={handleSubmitComment} className="space-y-4">
               <div className="space-y-2">
@@ -248,8 +248,8 @@ export default function CommentsSheet({ eventId = "default" }: CommentsSheetProp
           </div>
 
           {/* Comments List */}
-          <ScrollArea className="flex-1 px-6">
-            <div className="space-y-6 pr-4">
+          <ScrollArea className="flex-1 overflow-y-auto px-6">
+            <div className="space-y-6 pb-6 pr-4">
               {sortedComments.map((comment) => (
                 <div key={comment.id} className="space-y-4">
                   <CommentItem comment={comment} />
