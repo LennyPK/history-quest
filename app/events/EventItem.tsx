@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { HistoricEvent } from "@/lib/types/event"
-import { Lock, Star } from "lucide-react"
+import { Lock, RectangleEllipsis } from "lucide-react"
 import Image from "next/image"
 import React, { useEffect, useState } from "react"
 
@@ -14,7 +14,6 @@ const EventItem: React.FC<EventItemProps> = ({ event, onClick }) => {
   const [isUnlocked, setIsUnlocked] = useState(event.isFullyImplemented)
 
   useEffect(() => {
-  
     const completedEvents = ["world-war-two"] // Example of completed events, replace with actual logic to fetch completed events
     if (event.id === "french-revolution" && completedEvents.includes("world-war-two")) {
       setIsUnlocked(true)
@@ -22,13 +21,18 @@ const EventItem: React.FC<EventItemProps> = ({ event, onClick }) => {
   }, [event.id])
 
   const getDifficultyStars = (difficulty: number) => {
+    const getColor = (index: number) => {
+      if (index < difficulty) {
+        if (difficulty <= 2) return "text-green-400 fill-green-400"
+        if (difficulty <= 3) return "text-yellow-400 fill-yellow-400"
+        if (difficulty <= 4) return "text-orange-400 fill-orange-400"
+        return "text-red-400 fill-red-400"
+      }
+      return "text-gray-300"
+    }
+
     return Array.from({ length: 5 }, (_, index) => (
-      <Star
-        key={index}
-        className={`h-3 w-3 ${
-          index < difficulty ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
-        }`}
-      />
+      <RectangleEllipsis key={index} className={`h-3 w-3 ${getColor(index)}`} />
     ))
   }
 
@@ -41,7 +45,7 @@ const EventItem: React.FC<EventItemProps> = ({ event, onClick }) => {
   }
 
   return (
-    <div onClick={handleClick}>
+    <div className="flex justify-center" onClick={handleClick}>
       <Card
         className={`h-80 w-64 overflow-hidden p-0 transition-all duration-200 ${
           isUnlocked

@@ -1,6 +1,6 @@
-"use client";
-import { useEffect, useState } from "react";
-import LeaderboardPodium from "./LeaderBoardPodium";
+"use client"
+import { useEffect, useState } from "react"
+import LeaderboardPodium from "./LeaderBoardPodium"
 
 type LeaderboardUser = {
   name: string
@@ -52,8 +52,8 @@ export default function Leaderboard() {
   const [users, setUsers] = useState<LeaderboardUser[]>([])
   const [currentUserPoints, setCurrentUserPoints] = useState<number>(() => {
     // Try to get stored points from localStorage, default to 0
-    if (typeof window !== 'undefined') {
-      return Number(localStorage.getItem('userPoints')) || 0
+    if (typeof window !== "undefined") {
+      return Number(localStorage.getItem("userPoints")) || 0
     }
     return 0
   })
@@ -66,21 +66,21 @@ export default function Leaderboard() {
       points: currentUserPoints,
       rank: 0, // Will be calculated
       profileImage: "/pfp.svg",
-      isCurrentUser: true
+      isCurrentUser: true,
     }
 
     const allUsers = [...initialTopUsers, currentUser]
       .sort((a, b) => b.points - a.points)
       .map((user, index) => ({
         ...user,
-        rank: index + 1
+        rank: index + 1,
       }))
 
     setUsers(allUsers)
 
     // Store current user points in localStorage
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('userPoints', currentUserPoints.toString())
+    if (typeof window !== "undefined") {
+      localStorage.setItem("userPoints", currentUserPoints.toString())
     }
   }, [currentUserPoints])
 
@@ -102,11 +102,13 @@ export default function Leaderboard() {
           <div
             key={user.name}
             className={`mb-2 flex items-center justify-between rounded-lg p-3 ${
-              user.isCurrentUser ? 'bg-blue-50' : 'hover:bg-gray-50'
+              user.isCurrentUser ? "bg-blue-50" : "hover:bg-gray-50"
             }`}
           >
             <div className="flex items-center gap-4">
-              <span className={`flex h-6 w-6 items-center justify-center rounded-full ${getRankColor(user.rank)} ${getRankTextColor(user.rank)} font-bold`}>
+              <span
+                className={`flex h-6 w-6 items-center justify-center rounded-full ${getRankColor(user.rank)} ${getRankTextColor(user.rank)} font-bold`}
+              >
                 {user.rank}
               </span>
               <img

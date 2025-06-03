@@ -23,7 +23,7 @@ export default function EventsPage() {
   const totalCount = events.length
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto max-w-7xl p-8">
       <div className="mb-8">
         <h1 className="mb-4 text-4xl font-bold text-gray-900">Historic Events</h1>
 
@@ -35,7 +35,7 @@ export default function EventsPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {events.map((event) => (
           <EventItem key={event.id} event={event} onClick={handleEventClick} />
         ))}

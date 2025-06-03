@@ -40,7 +40,7 @@ export default function EventPage({ params }: EventPageProps) {
   const attempts = 3
 
   return (
-    <div>
+    <div className="container mx-auto max-w-7xl p-8">
       <div className="mb-6">
         <Link href="/events" className="text-primary mb-4 inline-flex items-center hover:underline">
           <ArrowLeft className="mr-2 h-4 w-4" />
