@@ -13,19 +13,19 @@ type LeaderboardUser = {
 const initialTopUsers: LeaderboardUser[] = [
   {
     name: "Ben Tennyson",
-    points: 1250,
+    points: 390,
     rank: 2,
     profileImage: "/pfp.svg",
   },
   {
     name: "John Doe",
-    points: 1250,
+    points: 580,
     rank: 1,
     profileImage: "/pfp.svg",
   },
   {
     name: "Percy Jackson",
-    points: 1250,
+    points: 235,
     rank: 3,
     profileImage: "/pfp.svg",
   },
