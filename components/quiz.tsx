@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import rawQuestions from "@/lib/data/ww2_quiz.json"
 import { AnimatePresence, motion } from "framer-motion"
+import { Check, X } from "lucide-react"
 import { useEffect, useState } from "react"
 
 interface Question {
@@ -10,6 +11,8 @@ interface Question {
   question: string
   options: string[]
   answer: string
+  explanation: string
+  shuffledOptions?: string[] // 🔄 New: randomized option order
 }
 
 const shuffleArray = <T,>(array: T[]): T[] => {
@@ -25,7 +28,12 @@ export default function Quiz() {
   const [quizFinished, setQuizFinished] = useState(false)
 
   useEffect(() => {
-    const randomized = shuffleArray(rawQuestions).slice(0, 10)
+    const randomized = shuffleArray(rawQuestions)
+      .slice(0, 10)
+      .map((q) => ({
+        ...q,
+        shuffledOptions: shuffleArray(q.options), // 🔄 Shuffle options per question
+      }))
     setShuffledQuestions(randomized)
   }, [])
 
@@ -52,7 +60,12 @@ export default function Quiz() {
   }
 
   const resetQuiz = () => {
-    const randomized = shuffleArray(rawQuestions).slice(0, 10)
+    const randomized = shuffleArray(rawQuestions)
+      .slice(0, 10)
+      .map((q) => ({
+        ...q,
+        shuffledOptions: shuffleArray(q.options),
+      }))
     setShuffledQuestions(randomized)
     setCurrentIndex(0)
     setSelectedOption(null)
@@ -80,10 +93,18 @@ export default function Quiz() {
                   <div className="font-semibold">
                     Q{index + 1}: {q.question}
                   </div>
-                  <div className={isCorrect ? "text-green-600" : "text-red-600"}>
-                    Your Answer: {userAnswer || "Not Answered"}
+                  <div
+                    className={`flex items-center gap-2 ${isCorrect ? "text-green-600" : "text-red-600"}`}
+                  >
+                    <span>Your Answer: {userAnswer}</span>
+                    {isCorrect ? (
+                      <Check className="h-6 w-6 text-green-600" />
+                    ) : (
+                      <X className="h-6 w-6 text-red-600" />
+                    )}
                   </div>
                   {!isCorrect && <div className="text-green-700">Correct Answer: {q.answer}</div>}
+                  <div className="text-muted-foreground text-sm">{q.explanation}</div>
                 </CardContent>
               </Card>
             )
@@ -125,10 +146,9 @@ export default function Quiz() {
             <h3 className="text-lg font-semibold">{currentQuestion.question}</h3>
 
             <div className="space-y-3">
-              {currentQuestion.options.map((opt) => {
+              {currentQuestion.shuffledOptions?.map((opt) => {
                 const isSelected = selectedOption === opt
                 const isCorrect = opt === currentQuestion.answer
-                const isUserCorrect = selectedOption === currentQuestion.answer
 
                 let feedbackClass = ""
                 if (showFeedback) {
@@ -139,38 +159,54 @@ export default function Quiz() {
                   feedbackClass = isSelected ? "bg-blue-100 border-blue-600" : "border-gray-300"
                 }
 
+                const icon =
+                  showFeedback && isSelected ? (
+                    isCorrect ? (
+                      <Check className="h-6 w-6 text-green-600" />
+                    ) : (
+                      <X className="h-6 w-6 text-red-600" />
+                    )
+                  ) : null
+
                 return (
                   <motion.button
                     key={opt}
                     whileTap={{ scale: 0.98 }}
                     whileHover={{ scale: 1.01 }}
                     onClick={() => !showFeedback && setSelectedOption(opt)}
-                    className={`w-full rounded border px-4 py-2 text-left transition ${feedbackClass}`}
+                    className={`flex w-full items-center justify-between rounded border px-4 py-2 text-left transition ${feedbackClass}`}
                   >
-                    {opt}
+                    <span>{opt}</span>
+                    {icon && <span>{icon}</span>}
                   </motion.button>
                 )
               })}
             </div>
 
-            {!showFeedback ? (
-              <motion.button
-                whileTap={{ scale: 0.97 }}
-                onClick={handleSubmit}
-                disabled={!selectedOption}
-                className="rounded bg-black px-5 py-2 text-white hover:bg-gray-800 disabled:bg-gray-400"
-              >
-                Submit Answer
-              </motion.button>
-            ) : (
-              <motion.button
-                whileTap={{ scale: 0.97 }}
-                onClick={handleNext}
-                className="rounded bg-blue-600 px-5 py-2 text-white hover:bg-blue-700"
-              >
-                Next Question
-              </motion.button>
+            {showFeedback && (
+              <p className="text-muted-foreground mt-4 text-sm">{currentQuestion.explanation}</p>
             )}
+
+            <div className="mt-6 flex justify-end">
+              {!showFeedback ? (
+                <motion.button
+                  whileTap={{ scale: 0.97 }}
+                  onClick={handleSubmit}
+                  disabled={!selectedOption}
+                  className="rounded bg-black px-5 py-2 text-white hover:bg-gray-800 disabled:bg-gray-400"
+                >
+                  Submit Answer
+                </motion.button>
+              ) : (
+                <motion.button
+                  whileTap={{ scale: 0.97 }}
+                  onClick={handleNext}
+                  className="rounded bg-blue-600 px-5 py-2 text-white hover:bg-blue-700"
+                >
+                  Next →
+                </motion.button>
+              )}
+            </div>
           </motion.div>
         </AnimatePresence>
       </CardContent>

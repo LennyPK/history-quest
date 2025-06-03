@@ -1,28 +1,27 @@
 [
   {
     "id": 1,
-    "difficulty": "easy",
     "question": "When did World War II begin?",
     "options": ["1914", "1939", "1945", "1963"],
-    "answer": "1939"
+    "answer": "1939",
+    "explanation": "World War II began on September 1, 1939, when Germany invaded Poland, prompting Britain and France to declare war."
   },
   {
     "id": 2,
-    "difficulty": "easy",
     "question": "Who was the leader of Nazi Germany?",
     "options": ["Joseph Stalin", "Franklin D. Roosevelt", "Adolf Hitler", "Winston Churchill"],
-    "answer": "Adolf Hitler"
+    "answer": "Adolf Hitler",
+    "explanation": "Adolf Hitler was the dictator of Nazi Germany from 1934 to 1945, leading the country into WWII and orchestrating the Holocaust."
   },
   {
     "id": 3,
-    "difficulty": "easy",
     "question": "Which country was attacked at Pearl Harbor?",
     "options": ["Japan", "Germany", "United Kingdom", "United States"],
-    "answer": "United States"
+    "answer": "United States",
+    "explanation": "Japan attacked the U.S. naval base at Pearl Harbor on December 7, 1941, which led the U.S. to enter WWII."
   },
   {
     "id": 4,
-    "difficulty": "easy",
     "question": "What does D-Day refer to?",
     "options": [
       "Germany’s invasion of Poland",
@@ -30,11 +29,11 @@
       "Allied invasion of Normandy",
       "Japan’s surrender"
     ],
-    "answer": "Allied invasion of Normandy"
+    "answer": "Allied invasion of Normandy",
+    "explanation": "D-Day was the Allied invasion of Normandy on June 6, 1944, marking a major turning point on the Western Front of WWII."
   },
   {
     "id": 5,
-    "difficulty": "easy",
     "question": "Which two cities were hit with atomic bombs in 1945?",
     "options": [
       "Tokyo and Osaka",
@@ -42,11 +41,11 @@
       "Berlin and Paris",
       "Seoul and Beijing"
     ],
-    "answer": "Hiroshima and Nagasaki"
+    "answer": "Hiroshima and Nagasaki",
+    "explanation": "The U.S. dropped atomic bombs on Hiroshima (August 6) and Nagasaki (August 9) in 1945, leading to Japan’s surrender."
   },
   {
     "id": 6,
-    "difficulty": "medium",
     "question": "Which treaty ended World War I and contributed to WWII?",
     "options": [
       "Treaty of Brest-Litovsk",
@@ -54,18 +53,18 @@
       "Treaty of Versailles",
       "Geneva Convention"
     ],
-    "answer": "Treaty of Versailles"
+    "answer": "Treaty of Versailles",
+    "explanation": "The Treaty of Versailles in 1919 imposed harsh penalties on Germany, creating economic hardship and resentment that fueled WWII."
   },
   {
     "id": 7,
-    "difficulty": "medium",
     "question": "Who was the British Prime Minister during most of World War II?",
     "options": ["Neville Chamberlain", "Margaret Thatcher", "Winston Churchill", "Tony Blair"],
-    "answer": "Winston Churchill"
+    "answer": "Winston Churchill",
+    "explanation": "Winston Churchill served as Prime Minister of the United Kingdom during most of WWII and is known for his leadership and speeches."
   },
   {
     "id": 8,
-    "difficulty": "medium",
     "question": "What is ‘Blitzkrieg’?",
     "options": [
       "A German tank",
@@ -73,11 +72,11 @@
       "A fast and surprise attack strategy",
       "A British air defense system"
     ],
-    "answer": "A fast and surprise attack strategy"
+    "answer": "A fast and surprise attack strategy",
+    "explanation": "Blitzkrieg, or 'lightning war,' was a German military tactic combining speed, surprise, and overwhelming force to defeat enemies quickly."
   },
   {
     "id": 9,
-    "difficulty": "medium",
     "question": "Which battle marked a turning point on the Eastern Front?",
     "options": [
       "Battle of Midway",
@@ -85,25 +84,25 @@
       "Battle of Stalingrad",
       "Battle of El Alamein"
     ],
-    "answer": "Battle of Stalingrad"
+    "answer": "Battle of Stalingrad",
+    "explanation": "The Battle of Stalingrad (1942–43) ended with a decisive Soviet victory and is considered a turning point in the Eastern Front of WWII."
   },
   {
     "id": 10,
-    "difficulty": "medium",
     "question": "What was the U.S. program to develop atomic bombs called?",
     "options": ["Apollo Mission", "Cold Fusion", "Operation Thunder", "Manhattan Project"],
-    "answer": "Manhattan Project"
+    "answer": "Manhattan Project",
+    "explanation": "The Manhattan Project was a top-secret U.S. research project during WWII that developed the first nuclear weapons."
   },
   {
     "id": 11,
-    "difficulty": "hard",
     "question": "When did Germany officially surrender in WWII?",
     "options": ["May 1, 1944", "May 7, 1945", "June 6, 1944", "August 9, 1945"],
-    "answer": "May 7, 1945"
+    "answer": "May 7, 1945",
+    "explanation": "Germany signed an unconditional surrender on May 7, 1945, effectively ending the war in Europe."
   },
   {
     "id": 12,
-    "difficulty": "hard",
     "question": "What 1945 conference planned post-war Europe and UN formation?",
     "options": [
       "Geneva Conference",
@@ -111,11 +110,11 @@
       "Yalta Conference",
       "Versailles Conference"
     ],
-    "answer": "Yalta Conference"
+    "answer": "Yalta Conference",
+    "explanation": "The Yalta Conference in February 1945 was attended by Roosevelt, Churchill, and Stalin to discuss post-war Europe and the creation of the UN."
   },
   {
     "id": 13,
-    "difficulty": "hard",
     "question": "What was the codename for Germany’s invasion of the Soviet Union?",
     "options": [
       "Operation Torch",
@@ -123,11 +122,11 @@
       "Operation Overlord",
       "Operation Barbarossa"
     ],
-    "answer": "Operation Barbarossa"
+    "answer": "Operation Barbarossa",
+    "explanation": "Operation Barbarossa was Germany’s 1941 invasion of the Soviet Union, which ultimately failed and marked a turning point on the Eastern Front."
   },
   {
     "id": 14,
-    "difficulty": "hard",
     "question": "Who was the Supreme Allied Commander in Europe?",
     "options": [
       "George S. Patton",
@@ -135,13 +134,144 @@
       "Dwight D. Eisenhower",
       "Bernard Montgomery"
     ],
-    "answer": "Dwight D. Eisenhower"
+    "answer": "Dwight D. Eisenhower",
+    "explanation": "General Dwight D. Eisenhower served as Supreme Allied Commander in Europe and oversaw the D-Day invasion."
   },
   {
     "id": 15,
-    "difficulty": "hard",
     "question": "What were the trials of Nazi leaders for war crimes called?",
     "options": ["Geneva Trials", "Berlin Courts", "Nuremberg Trials", "Axis Tribunal"],
-    "answer": "Nuremberg Trials"
+    "answer": "Nuremberg Trials",
+    "explanation": "The Nuremberg Trials were held after WWII to prosecute key Nazi officials for crimes against humanity and war crimes."
+  },
+  {
+    "id": 16,
+    "question": "Which event is considered the trigger for Britain and France to declare war on Germany?",
+    "options": [
+      "Invasion of Belgium",
+      "Invasion of Poland",
+      "Annexation of Austria",
+      "Bombing of London"
+    ],
+    "answer": "Invasion of Poland",
+    "explanation": "Germany’s invasion of Poland on September 1, 1939, caused Britain and France to declare war, starting WWII in Europe."
+  },
+  {
+    "id": 17,
+    "question": "What was the name of the German air force during World War II?",
+    "options": ["Kriegsmarine", "Wehrmacht", "Panzerwaffe", "Luftwaffe"],
+    "answer": "Luftwaffe",
+    "explanation": "The Luftwaffe was the aerial warfare branch of the German military during World War II."
+  },
+  {
+    "id": 18,
+    "question": "Which countries made up the Axis powers in WWII?",
+    "options": [
+      "Germany, Italy, Japan",
+      "Germany, France, Japan",
+      "Italy, Britain, USSR",
+      "Japan, USA, Germany"
+    ],
+    "answer": "Germany, Italy, Japan",
+    "explanation": "The core Axis powers were Nazi Germany, Fascist Italy, and Imperial Japan."
+  },
+  {
+    "id": 19,
+    "question": "What was the code name for the Allied invasion of Italy?",
+    "options": [
+      "Operation Torch",
+      "Operation Market Garden",
+      "Operation Avalanche",
+      "Operation Sea Lion"
+    ],
+    "answer": "Operation Avalanche",
+    "explanation": "Operation Avalanche was the Allied landing near Salerno, Italy, in September 1943."
+  },
+  {
+    "id": 20,
+    "question": "Which U.S. president authorized the use of atomic bombs on Japan?",
+    "options": [
+      "Franklin D. Roosevelt",
+      "Harry S. Truman",
+      "Dwight D. Eisenhower",
+      "John F. Kennedy"
+    ],
+    "answer": "Harry S. Truman",
+    "explanation": "President Harry S. Truman made the decision to drop atomic bombs on Hiroshima and Nagasaki in August 1945."
+  },
+  {
+    "id": 21,
+    "question": "Which major battle stopped Japan's expansion in the Pacific?",
+    "options": [
+      "Battle of Coral Sea",
+      "Battle of Midway",
+      "Battle of Iwo Jima",
+      "Battle of Okinawa"
+    ],
+    "answer": "Battle of Midway",
+    "explanation": "The Battle of Midway in June 1942 was a turning point in the Pacific, with the U.S. sinking four Japanese carriers."
+  },
+  {
+    "id": 22,
+    "question": "What was the name of Hitler's plan to exterminate the Jews?",
+    "options": ["The Jewish Solution", "Final Order", "Final Solution", "Operation Cleanse"],
+    "answer": "Final Solution",
+    "explanation": "The 'Final Solution' was Nazi Germany’s plan to systematically exterminate the Jewish population of Europe."
+  },
+  {
+    "id": 23,
+    "question": "Which country suffered the highest military casualties in WWII?",
+    "options": ["Germany", "United States", "Japan", "Soviet Union"],
+    "answer": "Soviet Union",
+    "explanation": "The Soviet Union suffered the most military deaths in WWII, with an estimated 8-10 million soldiers killed."
+  },
+  {
+    "id": 24,
+    "question": "Where did the D-Day landings take place?",
+    "options": ["Normandy", "Sicily", "Dunkirk", "Marseille"],
+    "answer": "Normandy",
+    "explanation": "The D-Day landings on June 6, 1944, took place on the beaches of Normandy, France."
+  },
+  {
+    "id": 25,
+    "question": "What was the name of the Nazi secret police?",
+    "options": ["Gestapo", "SS", "Wehrmacht", "Stasi"],
+    "answer": "Gestapo",
+    "explanation": "The Gestapo was Nazi Germany’s secret police, known for suppressing opposition and enforcing Nazi rule."
+  },
+  {
+    "id": 26,
+    "question": "Which battle was the last major German offensive on the Western Front?",
+    "options": ["Battle of Berlin", "Battle of the Bulge", "Battle of Kursk", "Battle of France"],
+    "answer": "Battle of the Bulge",
+    "explanation": "The Battle of the Bulge in December 1944 was Germany’s last major offensive against the Allies in the West."
+  },
+  {
+    "id": 27,
+    "question": "What year did Italy surrender to the Allies?",
+    "options": ["1941", "1942", "1943", "1944"],
+    "answer": "1943",
+    "explanation": "Italy formally surrendered to the Allies on September 8, 1943, after Mussolini was deposed."
+  },
+  {
+    "id": 28,
+    "question": "Which beach was NOT one of the five Allied landing zones on D-Day?",
+    "options": ["Omaha", "Gold", "Utah", "Calais"],
+    "answer": "Calais",
+    "explanation": "Calais was not a D-Day landing site; it was a diversion location. The actual beaches were Omaha, Utah, Gold, Juno, and Sword."
+  },
+  {
+    "id": 29,
+    "question": "What city was the site of a major airlift in 1948 due to a Soviet blockade?",
+    "options": ["Warsaw", "Moscow", "Berlin", "Vienna"],
+    "answer": "Berlin",
+    "explanation": "The Berlin Airlift was a response to the Soviet blockade of West Berlin after WWII, lasting from 1948 to 1949."
+  },
+  {
+    "id": 30,
+    "question": "Which trial established the legal precedent for crimes against humanity?",
+    "options": ["Tokyo Trials", "Geneva Trials", "Nuremberg Trials", "Paris Peace Talks"],
+    "answer": "Nuremberg Trials",
+    "explanation": "The Nuremberg Trials prosecuted top Nazi leaders and established international law for war crimes and crimes against humanity."
   }
 ]
