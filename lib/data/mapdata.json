@@ -1,0 +1,269 @@
+{
+  "world-war-two": {
+    "title": "World War II Major Events (1939-1945)",
+    "description": "Key battles, campaigns, and significant events of World War II",
+    "mapCenter": { "lat": 50.0, "lng": 10.0 },
+    "mapZoom": 4,
+    "events": [
+      {
+        "id": "invasion-poland",
+        "title": "Invasion of Poland",
+        "date": "September 1, 1939",
+        "location": { "lat": 52.2297, "lng": 21.0122 },
+        "description": "Germany invades Poland, marking the beginning of World War II in Europe. The Blitzkrieg tactics proved devastatingly effective.",
+        "type": "invasion",
+        "participants": ["Germany", "Poland"],
+        "casualties": "~200,000 Polish military and civilians killed"
+      },
+      {
+        "id": "battle-britain",
+        "title": "Battle of Britain",
+        "date": "July 10 - October 31, 1940",
+        "location": { "lat": 51.5074, "lng": -0.1278 },
+        "description": "The German Luftwaffe's sustained bombing campaign against the UK. The RAF's successful defense prevented German invasion.",
+        "type": "air-campaign",
+        "participants": ["Germany", "United Kingdom"],
+        "casualties": "~2,500 RAF personnel killed, ~23,000 British civilians killed"
+      },
+      {
+        "id": "operation-barbarossa",
+        "title": "Operation Barbarossa",
+        "date": "June 22, 1941",
+        "location": { "lat": 55.7558, "lng": 37.6176 },
+        "description": "Germany launches the largest military invasion in history against the Soviet Union, opening the Eastern Front.",
+        "type": "invasion",
+        "participants": ["Germany", "Soviet Union"],
+        "casualties": "~5 million Axis casualties, ~27 million Soviet casualties"
+      },
+      {
+        "id": "pearl-harbor",
+        "title": "Attack on Pearl Harbor",
+        "date": "December 7, 1941",
+        "location": { "lat": 21.3099, "lng": -157.8581 },
+        "description": "Japan launches a surprise attack on the US naval base at Pearl Harbor, bringing the United States into World War II.",
+        "type": "attack",
+        "participants": ["Japan", "United States"],
+        "casualties": "~2,400 American military personnel and civilians killed"
+      },
+      {
+        "id": "battle-midway",
+        "title": "Battle of Midway",
+        "date": "June 4-7, 1942",
+        "location": { "lat": 28.2072, "lng": -177.3735 },
+        "description": "Decisive naval battle in the Pacific Theater. US forces defeated the Japanese fleet, marking a turning point in the Pacific War.",
+        "type": "naval-battle",
+        "participants": ["United States", "Japan"],
+        "casualties": "~3,000 Japanese, ~300 American casualties"
+      },
+      {
+        "id": "battle-stalingrad",
+        "title": "Battle of Stalingrad",
+        "date": "August 23, 1942 - February 2, 1943",
+        "location": { "lat": 48.7080, "lng": 44.5133 },
+        "description": "Brutal urban warfare that became a turning point on the Eastern Front. German 6th Army was completely destroyed.",
+        "type": "siege",
+        "participants": ["Germany", "Soviet Union"],
+        "casualties": "~800,000 Axis casualties, ~1.1 million Soviet casualties"
+      },
+      {
+        "id": "battle-kursk",
+        "title": "Battle of Kursk",
+        "date": "July 5 - August 23, 1943",
+        "location": { "lat": 51.7373, "lng": 36.1873 },
+        "description": "The largest tank battle in history. German offensive Operation Citadel was decisively defeated by Soviet forces.",
+        "type": "tank-battle",
+        "participants": ["Germany", "Soviet Union"],
+        "casualties": "~200,000 German casualties, ~250,000 Soviet casualties"
+      },
+      {
+        "id": "d-day",
+        "title": "D-Day Normandy Landings",
+        "date": "June 6, 1944",
+        "location": { "lat": 49.3484, "lng": -0.8738 },
+        "description": "Operation Overlord - the largest seaborne invasion in history. Allied forces successfully established a foothold in Nazi-occupied Europe.",
+        "type": "invasion",
+        "participants": ["United States", "United Kingdom", "Canada", "Germany"],
+        "casualties": "~4,400 Allied casualties, ~9,000 German casualties"
+      },
+      {
+        "id": "liberation-paris",
+        "title": "Liberation of Paris",
+        "date": "August 25, 1944",
+        "location": { "lat": 48.8566, "lng": 2.3522 },
+        "description": "Allied forces liberate Paris after four years of German occupation. General de Gaulle leads the Free French into the city.",
+        "type": "liberation",
+        "participants": ["France", "United States", "United Kingdom"],
+        "casualties": "~3,000 casualties (combined)"
+      },
+      {
+        "id": "battle-bulge",
+        "title": "Battle of the Bulge",
+        "date": "December 16, 1944 - January 25, 1945",
+        "location": { "lat": 50.0755, "lng": 5.7915 },
+        "description": "Germany's last major offensive on the Western Front. Despite initial success, the offensive ultimately failed.",
+        "type": "offensive",
+        "participants": ["Germany", "United States", "United Kingdom"],
+        "casualties": "~100,000 German casualties, ~90,000 Allied casualties"
+      },
+      {
+        "id": "crossing-rhine",
+        "title": "Crossing of the Rhine",
+        "date": "March 7, 1945",
+        "location": { "lat": 50.7374, "lng": 7.0982 },
+        "description": "Allied forces cross the Rhine River at Remagen, breaching Germany's last major defensive barrier in the west.",
+        "type": "river-crossing",
+        "participants": ["United States", "Germany"],
+        "casualties": "~5,000 casualties (combined)"
+      },
+      {
+        "id": "battle-berlin",
+        "title": "Battle of Berlin",
+        "date": "April 16 - May 2, 1945",
+        "location": { "lat": 52.5200, "lng": 13.4050 },
+        "description": "Final major battle in Europe. Soviet forces capture Berlin, leading to Hitler's suicide and Germany's surrender.",
+        "type": "siege",
+        "participants": ["Soviet Union", "Germany"],
+        "casualties": "~350,000 Soviet casualties, ~325,000 German casualties"
+      },
+      {
+        "id": "hiroshima",
+        "title": "Atomic Bombing of Hiroshima",
+        "date": "August 6, 1945",
+        "location": { "lat": 34.3853, "lng": 132.4553 },
+        "description": "The first use of atomic weapons in warfare. The bombing devastated the city and hastened Japan's surrender.",
+        "type": "atomic-bombing",
+        "participants": ["United States", "Japan"],
+        "casualties": "~200,000 Japanese civilians killed"
+      },
+      {
+        "id": "nagasaki",
+        "title": "Atomic Bombing of Nagasaki",
+        "date": "August 9, 1945",
+        "location": { "lat": 32.7503, "lng": 129.8779 },
+        "description": "The second atomic bomb dropped on Japan. This, combined with Soviet invasion of Manchuria, led to Japan's surrender.",
+        "type": "atomic-bombing",
+        "participants": ["United States", "Japan"],
+        "casualties": "~140,000 Japanese civilians killed"
+      },
+      {
+        "id": "vj-day",
+        "title": "Victory over Japan Day",
+        "date": "August 15, 1945",
+        "location": { "lat": 35.6762, "lng": 139.6503 },
+        "description": "Japan announces its surrender, effectively ending World War II. Formal surrender ceremony held on USS Missouri in Tokyo Bay.",
+        "type": "surrender",
+        "participants": ["Japan", "Allied Forces"],
+        "casualties": "War officially ends"
+      }
+    ]
+  },
+  "french-revolution": {
+  "title": "The French Revolution (1789–1799)",
+  "description": "Major events and turning points of the French Revolution",
+  "mapCenter": { "lat": 46.6034, "lng": 1.8883 },
+  "mapZoom": 6,
+  "events": [
+    {
+      "id": "estates-general",
+      "title": "Estates-General Assembly",
+      "date": "May 1789",
+      "location": { "lat": 48.8044, "lng": 2.1232 },
+      "description": "King Louis XVI called an assembly at Versailles to address France's financial crisis, but it ultimately failed to resolve tensions between the estates.",
+      "type": "assembly",
+      "participants": ["First Estate (Clergy)", "Second Estate (Nobility)", "Third Estate (Commoners)"],
+      "casualties": "No casualties - political event"
+    },
+    {
+      "id": "national-assembly",
+      "title": "Formation of National Assembly",
+      "date": "June 1789",
+      "location": { "lat": 48.8035, "lng": 2.1240 },
+      "description": "The Third Estate declared itself as the National Assembly, pledging not to disperse until they gave France a new constitution.",
+      "type": "political-formation",
+      "participants": ["Third Estate", "Some clergy and nobles"],
+      "casualties": "No casualties - political event"
+    },
+    {
+      "id": "storming-bastille",
+      "title": "Storming of the Bastille",
+      "date": "July 14, 1789",
+      "location": { "lat": 48.8532, "lng": 2.3692 },
+      "description": "Angry Parisians stormed the Bastille fortress, a symbol of royal tyranny. This marked the start of the revolution as the King recognized the sovereignty of his people.",
+      "type": "uprising",
+      "participants": ["Parisian citizens", "Royal guards"],
+      "casualties": "~100 attackers killed, 7 guards killed"
+    },
+    {
+      "id": "declaration-rights",
+      "title": "Declaration of Rights of Man and Citizen",
+      "date": "August 26, 1789",
+      "location": { "lat": 48.8026, "lng": 2.1250 },
+      "description": "Document expressing principles of liberty, equality and fraternity, inspired by Enlightenment ideologies.",
+      "type": "declaration",
+      "participants": ["National Assembly"],
+      "casualties": "No casualties - legislative event"
+    },
+    {
+      "id": "womens-march",
+      "title": "Women's March on Versailles",
+      "date": "October 5-6, 1789",
+      "location": { "lat": 48.8017, "lng": 2.1260 },
+      "description": "Concerned over the high price of bread, thousands of women rioted and marched to Versailles, forcing the royal family to return to Paris.",
+      "type": "march",
+      "participants": ["Thousands of Parisian women", "National Guard", "Royal family"],
+      "casualties": "Several killed in confrontations"
+    },
+    {
+      "id": "execution-louis-xvi",
+      "title": "Execution of King Louis XVI",
+      "date": "January 21, 1793",
+      "location": { "lat": 48.8570, "lng": 2.3520 },
+      "description": "Marked the end of the monarchy and establishment of the First French Republic. Louis XVI was executed by guillotine for treason, shocking Europe.",
+      "type": "execution",
+      "participants": ["Revolutionary government", "King Louis XVI"],
+      "casualties": "King Louis XVI executed"
+    },
+    {
+      "id": "reign-of-terror-start",
+      "title": "Beginning of Reign of Terror",
+      "date": "September 1793",
+      "location": { "lat": 48.8560, "lng": 2.3530 },
+      "description": "Led by Robespierre, this period saw mass executions of enemies of the revolution, creating an atmosphere of fear across France.",
+      "type": "reign-of-terror",
+      "participants": ["Committee of Public Safety", "Jacobins", "Various accused"],
+      "casualties": "~17,000 officially executed during the Terror"
+    },
+    {
+      "id": "execution-marie-antoinette",
+      "title": "Execution of Marie Antoinette",
+      "date": "October 16, 1793",
+      "location": { "lat": 48.8550, "lng": 2.3540 },
+      "description": "Queen Marie Antoinette, unpopular for her perceived extravagance during times of poverty, was executed by guillotine.",
+      "type": "execution",
+      "participants": ["Revolutionary government", "Queen Marie Antoinette"],
+      "casualties": "Queen Marie Antoinette executed"
+    },
+    {
+      "id": "fall-robespierre",
+      "title": "Fall of Robespierre",
+      "date": "July 27, 1794",
+      "location": { "lat": 48.8540, "lng": 2.3550 },
+      "description": "Maximilien Robespierre was arrested and executed by his political rivals, ending the Reign of Terror and beginning a more moderate phase.",
+      "type": "execution",
+      "participants": ["Thermidorian Reaction", "Robespierre and supporters"],
+      "casualties": "Robespierre and 21 supporters executed"
+    },
+    {
+      "id": "napoleon-coup",
+      "title": "Napoleon's Coup d'État",
+      "date": "November 9, 1799",
+      "location": { "lat": 48.8530, "lng": 2.3560 },
+      "description": "Napoleon Bonaparte staged a coup and seized power, ending the revolutionary government and establishing himself as leader, transitioning France from revolutionary ideals to authoritarian rule.",
+      "type": "coup",
+      "participants": ["Napoleon Bonaparte", "Military supporters", "Directory government"],
+      "casualties": "Minimal casualties - bloodless coup"
+    }
+  ]
+}
+
+}

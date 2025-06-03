@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { HistoricEvent } from "@/lib/types/event"
 import { Lock, Star } from "lucide-react"
 import Image from "next/image"
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 interface EventItemProps {
   event: HistoricEvent
@@ -11,6 +11,16 @@ interface EventItemProps {
 }
 
 const EventItem: React.FC<EventItemProps> = ({ event, onClick }) => {
+  const [isUnlocked, setIsUnlocked] = useState(event.isFullyImplemented)
+
+  useEffect(() => {
+  
+    const completedEvents = ["world-war-two"] // Example of completed events, replace with actual logic to fetch completed events
+    if (event.id === "french-revolution" && completedEvents.includes("world-war-two")) {
+      setIsUnlocked(true)
+    }
+  }, [event.id])
+
   const getDifficultyStars = (difficulty: number) => {
     return Array.from({ length: 5 }, (_, index) => (
       <Star
@@ -24,7 +34,7 @@ const EventItem: React.FC<EventItemProps> = ({ event, onClick }) => {
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault()
-    if (event.isFullyImplemented && onClick) {
+    if (isUnlocked && onClick) {
       console.log("Event clicked:", event.name)
       onClick(event)
     }
@@ -34,13 +44,13 @@ const EventItem: React.FC<EventItemProps> = ({ event, onClick }) => {
     <div onClick={handleClick}>
       <Card
         className={`h-80 w-64 overflow-hidden p-0 transition-all duration-200 ${
-          event.isFullyImplemented
+          isUnlocked
             ? "cursor-pointer hover:scale-105 hover:shadow-lg"
             : "cursor-not-allowed opacity-75"
         }`}
       >
         <div className="h-35 relative w-full">
-          {event.isFullyImplemented ? (
+          {isUnlocked ? (
             <Image
               src={event.imageUrl}
               alt={event.name}
@@ -53,7 +63,7 @@ const EventItem: React.FC<EventItemProps> = ({ event, onClick }) => {
               <Lock className="h-10 w-10 text-gray-400" />
             </div>
           )}
-          {!event.isFullyImplemented && (
+          {!isUnlocked && (
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
               <Lock className="h-8 w-8 text-white" />
             </div>
@@ -72,7 +82,7 @@ const EventItem: React.FC<EventItemProps> = ({ event, onClick }) => {
               <span className="mr-1 text-xs text-gray-500">Difficulty:</span>
               {getDifficultyStars(event.difficulty)}
             </div>
-            {!event.isFullyImplemented && (
+            {!isUnlocked && (
               <Badge variant="outline" className="text-xs">
                 Coming Soon
               </Badge>

@@ -12,26 +12,28 @@ import { getEventById } from "@/lib/utils/events"
 import { ArrowLeft, BookOpen, Clock, Globe, HelpCircle, Newspaper, Trophy } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { useState } from "react"
+import { useState, use } from "react"
+import MapComponent from "@/components/MapComponent"
 
 interface EventPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export default function EventPage({ params }: EventPageProps) {
+  const resolvedParams = use(params)
+  const event = getEventById(resolvedParams.id)
+
+  if (!event) {
+    notFound()
+  }
+
   const [activeTab, setActiveTab] = useState("timeline")
   // const [currentScore, setCurrentScore] = useState<number | null>(null)
   // const [highestScore, setHighestScore] = useState<number | null>(null)
   // const [attempts, setAttempts] = useState(0)
   // const [showNewHighScore, setShowNewHighScore] = useState(false)
-
-  const event = getEventById(params.id)
-
-  if (!event) {
-    notFound()
-  }
 
   // Mock data for now - in a real app, this would come from a database
   const highestScore = 8
@@ -108,11 +110,13 @@ export default function EventPage({ params }: EventPageProps) {
           </Card>
         </TabsContent>
 
-        {/* Map Component*/}
+        {/* Map Component */}
         <TabsContent value="map" className="mt-6">
           <Card>
-            <CardContent className="pt-6">
-              <span>Map goes here</span>
+            <CardContent className="pt-0">
+              <div className="w-full h-full relative">
+                <MapComponent eventId={resolvedParams.id} setActiveTab={setActiveTab} />
+              </div>
             </CardContent>
           </Card>
         </TabsContent>

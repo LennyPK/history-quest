@@ -1,4 +1,4 @@
-import CustomMap  from './MapComponent';
+import CustomMap  from './HistoryGuesser';
 
 export default function HistoryGuesser() {
   return (
