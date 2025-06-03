@@ -73,7 +73,7 @@ export function Timeline({ events }: TimelineProps) {
       <div className="relative pt-6">
         <div className="bg-muted absolute left-0 right-0 top-0 h-1"></div>
         <div
-          className="bg-primary absolute left-0 top-0 h-1"
+          className="bg-primary absolute left-0 top-0 h-1 transition-all duration-500 ease-in-out"
           style={{ width: `${(selectedEventIndex / (events.length - 1)) * 100}%` }}
         ></div>
         <div className="flex justify-between">
