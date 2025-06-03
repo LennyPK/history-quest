@@ -1,5 +1,6 @@
 "use client"
 
+import CommentsSheet from "@/components/comments_sheet"
 import { ProgressBadge } from "@/components/progress-badge"
 import Quiz from "@/components/quiz"
 import { Card, CardContent } from "@/components/ui/card"
@@ -43,6 +44,7 @@ export default function EventPage({ params }: EventPageProps) {
         <div className="mb-2 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
           <div className="flex flex-row gap-5">
             <h1 className="text-4xl font-bold">{event.name}</h1>
+
             <span className="text-muted-foreground text-s flex items-center gap-1">
               <Clock className="h-4 w-4" />
               {event.date}
@@ -59,7 +61,15 @@ export default function EventPage({ params }: EventPageProps) {
             </div>
           </div>
         </div>
-        <p className="text-muted-foreground mb-6 text-xl">{event.blurb}</p>
+        <div className="flex gap-6">
+          <p className="text-muted-foreground flex-1 text-xl">{event.blurb}</p>
+          <div className="hidden lg:block">
+            <CommentsSheet eventId="global-conflict" />
+          </div>
+        </div>
+        <div className="mt-6 lg:hidden">
+          <CommentsSheet eventId="global-conflict" />
+        </div>
       </div>
 
       <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-8">

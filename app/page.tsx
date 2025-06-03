@@ -7,6 +7,7 @@ export default function Home() {
     <div className="flex min-h-screen justify-center">
       <div className="w-full max-w-7xl px-4 text-center">
         <h1 className="mb-4 text-5xl font-bold">Welcome to HistoryQuest!</h1>
+
         <p className="mb-8 text-lg">
           Discover important events that shaped our world through interactive lessons and quizzes.
           <br />
