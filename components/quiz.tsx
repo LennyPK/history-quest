@@ -1,6 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
+import { usePoints } from "@/hooks/usePoints"
 import rawQuestions from "@/lib/data/ww2_quiz.json"
 import { AnimatePresence, motion } from "framer-motion"
 import { Check, X } from "lucide-react"
@@ -26,6 +27,7 @@ export default function Quiz() {
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({})
   const [showFeedback, setShowFeedback] = useState(false)
   const [quizFinished, setQuizFinished] = useState(false)
+  const { addPoints } = usePoints()
 
   useEffect(() => {
     const randomized = shuffleArray(rawQuestions)
@@ -46,6 +48,10 @@ export default function Quiz() {
   const handleSubmit = () => {
     if (!selectedOption || !currentQuestion) return
     setUserAnswers((prev) => ({ ...prev, [currentQuestion.id]: selectedOption }))
+    // Award points if answer is correct
+    if (selectedOption === currentQuestion.answer) {
+      addPoints(100) // Award 100 points for correct answer
+    }
     setShowFeedback(true)
   }
 
