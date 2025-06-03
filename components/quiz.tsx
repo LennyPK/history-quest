@@ -162,7 +162,7 @@ export default function Quiz() {
                   else if (isSelected && !isCorrect) feedbackClass = "bg-red-100 border-red-600"
                   else feedbackClass = "opacity-50"
                 } else {
-                  feedbackClass = isSelected ? "bg-blue-100 border-blue-600" : "border-gray-300"
+                  feedbackClass = isSelected ? "bg-amber-100 border-amber-500" : "border-gray-300"
                 }
 
                 const icon =
@@ -207,7 +207,7 @@ export default function Quiz() {
                 <motion.button
                   whileTap={{ scale: 0.97 }}
                   onClick={handleNext}
-                  className="rounded bg-blue-600 px-5 py-2 text-white hover:bg-blue-700"
+                  className="text-primary rounded bg-amber-500 px-5 py-2 font-bold hover:bg-amber-700 hover:text-white"
                 >
                   Next →
                 </motion.button>

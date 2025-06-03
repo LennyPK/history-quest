@@ -73,7 +73,7 @@ export function Timeline({ events }: TimelineProps) {
       <div className="relative pt-6">
         <div className="bg-muted absolute left-0 right-0 top-0 h-1"></div>
         <div
-          className="bg-primary absolute left-0 top-0 h-1 transition-all duration-500 ease-in-out"
+          className="absolute left-0 top-0 h-1 bg-amber-500 transition-all duration-500 ease-in-out"
           style={{ width: `${(selectedEventIndex / (events.length - 1)) * 100}%` }}
         ></div>
         <div className="flex justify-between">
@@ -81,13 +81,17 @@ export function Timeline({ events }: TimelineProps) {
             <button
               key={index}
               className={`relative -mt-1.5 h-4 w-4 rounded-full ${
-                index <= selectedEventIndex ? "bg-primary" : "bg-muted"
+                index === selectedEventIndex
+                  ? "bg-amber-500"
+                  : index < selectedEventIndex
+                    ? "bg-primary"
+                    : "bg-muted"
               }`}
               onClick={() => setSelectedEventIndex(index)}
             >
               <span className="sr-only">{event.text}</span>
               {index === selectedEventIndex && (
-                <span className="bg-primary absolute inset-0 animate-ping rounded-full opacity-75"></span>
+                <span className="absolute inset-0 animate-ping rounded-full bg-amber-500 opacity-75"></span>
               )}
             </button>
           ))}

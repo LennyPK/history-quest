@@ -122,7 +122,6 @@ export default function EventPage({ params }: EventPageProps) {
         </TabsContent>
 
         {/* Details Component*/}
-        {/* Details */}
         <TabsContent value="details" className="mt-6">
           <EventDetails details={event.details} />
         </TabsContent>

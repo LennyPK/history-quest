@@ -45,11 +45,11 @@
             },
             {
               "title": "Battle of Britain",
-              "text": "The UK successfully resisted Germany’s aerial bombing campaign, halting Hitler’s plan to invade Britain."
+              "text": "The UK successfully resisted Germany's aerial bombing campaign, halting Hitler's plan to invade Britain."
             },
             {
               "title": "Operation Barbarossa",
-              "text": "Germany’s invasion of the Soviet Union marked a major turning point. The harsh winter and Soviet resistance stalled German advances."
+              "text": "Germany's invasion of the Soviet Union marked a major turning point. The harsh winter and Soviet resistance stalled German advances."
             },
             {
               "title": "Pearl Harbor Attack",
@@ -64,7 +64,7 @@
               "text": "Allied forces landed in Normandy, France, beginning the liberation of Western Europe from Nazi control."
             },
             {
-              "title": "Fall of Berlin & Hitler’s Death",
+              "title": "Fall of Berlin & Hitler's Death",
               "text": "Soviet forces captured Berlin. Hitler committed suicide, and Germany surrendered on May 7, 1945."
             },
             {
@@ -95,7 +95,7 @@
             },
             {
               "name": "Emperor Hirohito",
-              "role": "Monarch during Japan’s imperial expansion and wartime actions."
+              "role": "Monarch during Japan's imperial expansion and wartime actions."
             },
             {
               "name": "Dwight D. Eisenhower",
@@ -142,26 +142,52 @@
         {
           "url": "https://en.wikipedia.org/wiki/World_War_II",
           "title": "The Second World War",
-          "author": "Jane Doe",
-          "type": "website"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Causes_of_World_War_II",
-          "title": "Causes of World War II",
+          "description": "Comprehensive overview of World War II, including major battles, political developments, and global impact.",
+          "date": "2024-01-15",
           "author": "Wikipedia contributors",
-          "type": "website"
+          "hasImage": false,
+          "type": "other"
         },
         {
-          "url": "https://www.worldhistory.org/article/2660/what-were-the-consequences-of-wwii/",
-          "title": "What Were the Consequences of WWII?",
-          "author": "World History Encyclopedia",
-          "type": "journal"
+          "url": "https://example.com/ww2-photos",
+          "title": "World War II in Pictures",
+          "description": "Collection of rare photographs documenting key moments of the Second World War.",
+          "thumbnail": "/images/ww2.png",
+          "date": "2023-12-20",
+          "author": "Historical Archives",
+          "location": "National Archives, Washington DC",
+          "hasImage": true,
+          "type": "photo"
         },
         {
-          "url": "http://www.english-online.at/history/world-war-2/key-figures-of-world-war-ii.htm",
-          "title": "Key Figures of World War II",
-          "author": "English Online",
-          "type": "website"
+          "url": "https://example.com/ww2-documentary",
+          "title": "The World at War: Documentary Series",
+          "description": "Award-winning documentary series featuring interviews with veterans and historians.",
+          "thumbnail": "/images/sources/ww2-doc.jpg",
+          "date": "2023-11-05",
+          "author": "BBC Productions",
+          "hasImage": true,
+          "type": "video"
+        },
+        {
+          "url": "https://example.com/ww2-newspapers",
+          "title": "War Coverage: 1939-1945",
+          "description": "Collection of original newspaper articles and headlines from major publications during the war.",
+          "date": "2023-10-15",
+          "author": "Historical Press Archives",
+          "location": "British Library",
+          "hasImage": false,
+          "type": "newspaper"
+        },
+        {
+          "url": "https://example.com/ww2-documents",
+          "title": "Official War Documents",
+          "description": "Declassified military documents, treaties, and official correspondence from World War II.",
+          "date": "2023-09-30",
+          "author": "Military Archives",
+          "location": "Imperial War Museum",
+          "hasImage": false,
+          "type": "document"
         }
       ],
       "timeline": [
@@ -259,7 +285,7 @@
             },
             {
               "title": "Economic Instability",
-              "text": "The country faced severe financial problems due to wars, poor harvests, and the monarchy’s spending. The price of bread soared, leading to widespread hunger and discontent."
+              "text": "The country faced severe financial problems due to wars, poor harvests, and the monarchy's spending. The price of bread soared, leading to widespread hunger and discontent."
             },
             {
               "title": "Enlightenment Ideology",
@@ -284,7 +310,7 @@
               "text": "Document expressing principles of liberty, equality, and fraternity, inspired by Enlightenment ideologies."
             },
             {
-              "title": "Women’s March on Versailles",
+              "title": "Women's March on Versailles",
               "text": "Concerned over the high price of bread, thousands of women rioted and marched to Versailles, forcing the royals to return to Paris with them."
             },
             {
@@ -297,7 +323,7 @@
             },
             {
               "title": "Fall of Robespierre",
-              "text": "Maximilien Robespierre was arrested and executed by his political rivals. This marked the end of the Reign of Terror and ushered in a more moderate phase of the revolution. The execution represented a rejection of radicalism, and France’s stability rose."
+              "text": "Maximilien Robespierre was arrested and executed by his political rivals. This marked the end of the Reign of Terror and ushered in a more moderate phase of the revolution. The execution represented a rejection of radicalism, and France's stability rose."
             },
             {
               "title": "Rise of Napoleon Bonaparte",
@@ -307,7 +333,7 @@
           "key-participants": [
             {
               "name": "King Louis XVI",
-              "role": "The monarch whose weak leadership and financial mismanagement contributed to the revolution’s outbreak."
+              "role": "The monarch whose weak leadership and financial mismanagement contributed to the revolution's outbreak."
             },
             {
               "name": "Marie Antoinette",
@@ -325,7 +351,7 @@
           "outcomes": [
             {
               "title": "End of Monarchy",
-              "text": "The revolution abolished the monarchy and established a republic; however, it was later replaced by Napoleon’s rule."
+              "text": "The revolution abolished the monarchy and established a republic; however, it was later replaced by Napoleon's rule."
             },
             {
               "title": "Social Class Changes",
@@ -347,25 +373,25 @@
           "url": "https://byjus.com/free-ias-prep/french-revolution-1789-1799/",
           "title": "French Revolution",
           "author": "John Doe",
-          "type": "website"
+          "type": "other"
         },
         {
           "title": "The March on Versailles",
           "url": "https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/the-march-on-versailles/#:~:text=5%3A%20The%20March%20on%20Versailles,royals%20to%20return%20to%20Paris",
           "author": "John Doe",
-          "type": "website"
+          "type": "other"
         },
         {
           "title": "Key Events of the French Revolution to Know for European Art and Civilization – 1400 to Present",
           "url": "https://library.fiveable.me/lists/key-events-of-the-french-revolution",
           "author": "John Doe",
-          "type": "website"
+          "type": "other"
         },
         {
           "title": "7 Facts about the French Revolution You Must Know",
           "url": "https://www.frenchclass.in/blog/facts-on-french-revolution/",
           "author": "Vibya Goyal",
-          "type": "website"
+          "type": "other"
         }
       ],
       "timeline": [
@@ -399,7 +425,7 @@
         },
         {
           "date": "1789-10-05",
-          "heading": "Women’s March on Versailles",
+          "heading": "Women's March on Versailles",
           "text": "Concerned over the high price of bread, thousands of women rioted and marched to Versailles. Forcing the royals to return to Paris with them.",
           "place": "Versailles",
           "image": "/images/french-revolution/womens-march.jpg"
@@ -421,7 +447,7 @@
         {
           "date": "1794-07-27",
           "heading": "Fall of Robespierre",
-          "text": "Maximillien Robespierre was arrested and executed by his political rivals. This marked the end of the Reign of Terror into a more moderate phase of the revolution. The execution represented a rejection of radicalism, and France’s stability rose.",
+          "text": "Maximillien Robespierre was arrested and executed by his political rivals. This marked the end of the Reign of Terror into a more moderate phase of the revolution. The execution represented a rejection of radicalism, and France's stability rose.",
           "place": "Paris",
           "image": "/images/french-revolution/fall-of-robespierre.png"
         },

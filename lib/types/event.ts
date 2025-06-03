@@ -11,12 +11,17 @@ export interface HistoricEvent {
   details: Details[]
 }
 
-export type SourceType = "journal" | "newspaper" | "book" | "website" | "video" | "other"
+export type SourceType = "document" | "newspaper" | "video" | "photo" | "other"
 
 export interface Source {
   url: string
   title: string
+  description: string
+  thumbnail?: string
+  date: string
   author: string
+  location?: string
+  hasImage: boolean
   type: SourceType
 }
 
