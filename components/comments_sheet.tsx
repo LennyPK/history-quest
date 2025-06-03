@@ -192,7 +192,7 @@ export default function CommentsSheet({ eventId = "default" }: CommentsSheetProp
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="sm" className="gap-2">
+        <Button variant="default" size="default" className="gap-2">
           <MessageCircle className="h-4 w-4" />
           <span className="hidden sm:inline">Comments</span>
           <span className="text-muted-foreground text-xs">({comments.length})</span>
