@@ -8,6 +8,7 @@ export interface HistoricEvent {
   isFullyImplemented: boolean
   sources: Source[]
   timeline: TimelineEvent[]
+  details: Details[]
 }
 
 export interface Source {
@@ -21,4 +22,20 @@ export interface TimelineEvent {
   heading: string
   text: string
   place: string
+}
+
+export interface EventDetailItem {
+  title?: string
+  text?: string
+  name?: string
+  role?: string
+}
+
+export interface Details {
+  majorEventImage: string
+  imageCaption: string
+  causes: EventDetailItem[]
+  "major-events": EventDetailItem[]
+  "key-participants": EventDetailItem[]
+  outcomes: EventDetailItem[]
 }

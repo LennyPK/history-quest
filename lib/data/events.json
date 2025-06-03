@@ -8,16 +8,156 @@
       "blurb": "A global conflict that reshaped the political and social landscape of the 20th century.",
       "imageUrl": "/images/ww2.png",
       "isFullyImplemented": true,
+      "details": [
+        {
+          "majorEventImage": "/images/nagasaki.png",
+          "imageCaption": "The aftermath of the atomic bombing of Nagasaki.",
+          "causes": [
+            {
+              "title": "Treaty of Versailles (1919)",
+              "text": "Harsh penalties on Germany after WWI, including territorial loss and reparations, fueled resentment and nationalism."
+            },
+            {
+              "title": "Rise of Totalitarian Regimes",
+              "text": "Fascist leaders like Adolf Hitler (Germany), Benito Mussolini (Italy), and Emperor Hirohito (Japan) pursued aggressive expansionist policies."
+            },
+            {
+              "title": "Expansionism & Appeasement",
+              "text": "Axis powers expanded into neighbouring countries while the Allied powers, especially Britain and France, initially followed a policy of appeasement."
+            },
+            {
+              "title": "Failure of the League of Nations",
+              "text": "The international body failed to prevent aggression by the Axis powers."
+            },
+            {
+              "title": "The Great Depression",
+              "text": "Global economic hardship allowed extremist ideologies to gain support."
+            }
+          ],
+          "major-events": [
+            {
+              "title": "Invasion of Poland (September 1, 1939)",
+              "text": "Germany invaded Poland, prompting Britain and France to declare war on Germany two days later."
+            },
+            {
+              "title": "Fall of France (June 1940)",
+              "text": "Germany quickly conquered France using blitzkrieg tactics. France was divided into German-occupied and Vichy-controlled regions."
+            },
+            {
+              "title": "Battle of Britain (July – October 1940)",
+              "text": "The UK successfully resisted Germany’s aerial bombing campaign, halting Hitler’s plan to invade Britain."
+            },
+            {
+              "title": "Operation Barbarossa (June 22, 1941)",
+              "text": "Germany’s invasion of the Soviet Union marked a major turning point. The harsh winter and Soviet resistance stalled German advances."
+            },
+            {
+              "title": "Pearl Harbor Attack (December 7, 1941)",
+              "text": "Japan attacked the US naval base in Hawaii, prompting the US to join the war."
+            },
+            {
+              "title": "Battle of Stalingrad (August 1942 – February 1943)",
+              "text": "A turning point on the Eastern Front, where the Soviet Union decisively defeated Germany."
+            },
+            {
+              "title": "D-Day (June 6, 1944)",
+              "text": "Allied forces landed in Normandy, France, beginning the liberation of Western Europe from Nazi control."
+            },
+            {
+              "title": "Fall of Berlin & Hitler’s Death (April 1945)",
+              "text": "Soviet forces captured Berlin. Hitler committed suicide, and Germany surrendered on May 7, 1945."
+            },
+            {
+              "title": "Atomic Bombings (August 6 & 9, 1945)",
+              "text": "The US dropped atomic bombs on Hiroshima and Nagasaki, forcing Japan to surrender on Sep 2, 1945."
+            }
+          ],
+          "key-participants": [
+            {
+              "name": "Adolf Hitler",
+              "role": "Dictator of Nazi Germany, orchestrated the Holocaust and led military expansion across Europe."
+            },
+            {
+              "name": "Winston Churchill",
+              "role": "Prime Minister who led Britain through the war with powerful speeches and resolve."
+            },
+            {
+              "name": "Franklin D. Roosevelt",
+              "role": "U.S. President during most of the war; declared war after Pearl Harbor."
+            },
+            {
+              "name": "Joseph Stalin",
+              "role": "Soviet leader; led USSR through brutal Eastern Front campaigns against Nazi Germany."
+            },
+            {
+              "name": "Benito Mussolini",
+              "role": "Fascist dictator who allied with Hitler; was eventually overthrown and executed."
+            },
+            {
+              "name": "Emperor Hirohito",
+              "role": "Monarch during Japan’s imperial expansion and wartime actions."
+            },
+            {
+              "name": "Dwight D. Eisenhower",
+              "role": "Supreme Allied Commander in Europe; led the D-Day invasion."
+            },
+            {
+              "name": "Harry S. Truman",
+              "role": "U.S. President who decided to use atomic bombs on Japan."
+            }
+          ],
+          "outcomes": [
+            {
+              "title": "Defeat and Division of Germany",
+              "text": "Germany was defeated and divided into East (Soviet) and West (Allied)."
+            },
+            {
+              "title": "Surrender and Occupation of Japan",
+              "text": "Japan surrendered, leading to U.S. occupation and democratization."
+            },
+            {
+              "title": "Establishment of the United Nations",
+              "text": "The United Nations was established to promote peace and international cooperation."
+            },
+            {
+              "title": "Beginning of the Cold War",
+              "text": "The Cold War began between the U.S. and the USSR."
+            },
+            {
+              "title": "Decolonization Accelerated",
+              "text": "Decolonization accelerated in Asia and Africa."
+            },
+            {
+              "title": "Casualties and Human Cost",
+              "text": "Over 70 million died, including military and civilian casualties."
+            },
+            {
+              "title": "The Holocaust",
+              "text": "The Holocaust revealed, resulting in global condemnation and human rights reforms."
+            }
+          ]
+        }
+      ],
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/World_War_II",
           "title": "The Second World War",
-          "author": "John Doe"
+          "author": "Jane Doe"
         },
         {
-          "title": "The Second World War",
-          "url": "https://en.wikipedia.org/wiki/World_War_II",
-          "author": "Jane Doe"
+          "url": "https://en.wikipedia.org/wiki/Causes_of_World_War_II",
+          "title": "Causes of World War II",
+          "author": "Wikipedia contributors"
+        },
+        {
+          "url": "https://www.worldhistory.org/article/2660/what-were-the-consequences-of-wwii/",
+          "title": "What Were the Consequences of WWII?",
+          "author": "World History Encyclopedia"
+        },
+        {
+          "url": "http://www.english-online.at/history/world-war-2/key-figures-of-world-war-ii.htm",
+          "title": "Key Figures of World War II",
+          "author": "English Online"
         }
       ],
       "timeline": [
@@ -28,10 +168,60 @@
           "place": "Poland"
         },
         {
+          "date": "1940-06",
+          "heading": "Fall of France",
+          "text": "Germany quickly conquers France using blitzkrieg tactics. France is divided into German-occupied and Vichy-controlled regions.",
+          "place": "France"
+        },
+        {
+          "date": "1940-07",
+          "heading": "Battle of Britain",
+          "text": "The UK successfully resists Germany’s aerial bombing campaign, halting Hitler’s plan to invade Britain.",
+          "place": "United Kingdom",
+          "end_date": "1940-10"
+        },
+        {
+          "date": "1941-06-22",
+          "heading": "Operation Barbarossa",
+          "text": "Germany invades the Soviet Union, marking a major turning point. The harsh winter and Soviet resistance stall German advances.",
+          "place": "Soviet Union"
+        },
+        {
           "date": "1941-12-07",
           "heading": "Japan attacks Pearl Harbor",
-          "text": "Japan attacks Pearl Harbor, drawing the United States into the war.",
+          "text": "Japan attacks the US naval base in Hawaii, prompting the US to join the war.",
           "place": "Pearl Harbor"
+        },
+        {
+          "date": "1942-08",
+          "heading": "Battle of Stalingrad",
+          "text": "A turning point on the Eastern Front, where the Soviet Union decisively defeats Germany.",
+          "place": "Stalingrad",
+          "end_date": "1943-02"
+        },
+        {
+          "date": "1944-06-06",
+          "heading": "D-Day",
+          "text": "Allied forces land in Normandy, France, beginning the liberation of Western Europe from Nazi control.",
+          "place": "Normandy"
+        },
+        {
+          "date": "1945-04",
+          "heading": "Fall of Berlin & Hitler’s Death",
+          "text": "Soviet forces capture Berlin. Hitler commits suicide, and Germany surrenders on May 7, 1945.",
+          "place": "Berlin"
+        },
+        {
+          "date": "1945-08-06",
+          "heading": "Atomic Bombing of Hiroshima",
+          "text": "The US drops an atomic bomb on Hiroshima, Japan.",
+          "place": "Hiroshima"
+        },
+        {
+          "date": "1945-08-09",
+          "heading": "Atomic Bombing of Nagasaki",
+          "text": "The US drops an atomic bomb on Nagasaki, Japan, forcing Japan to surrender on September 2, 1945.",
+          "place": "Nagasaki"
         }
       ]
     },
@@ -41,22 +231,179 @@
       "difficulty": 3,
       "date": "1789-1799",
       "blurb": "A period of radical social and political upheaval in France.",
-      "imageUrl": "/images/french-revolution.jpg",
-      "isFullyImplemented": false,
+      "imageUrl": "/images/french-revolution.png",
+      "isFullyImplemented": true,
       "description": "A period of radical social and political upheaval in France that had a major impact on France and throughout Europe.",
+      "details": [
+        {
+          "majorEventImage": "/images/bastille.jpg",
+          "imageCaption": "The Storming of the Bastille (1789)",
+          "causes": [
+            {
+              "title": "Social Inequality",
+              "text": "The population was divided into three estates: the clergy (First Estate), the nobility (Second Estate), and the commoners (Third Estate). The Third Estate, despite outnumbering the aristocrats, possessed little political power and could be outvoted by the other two estates."
+            },
+            {
+              "title": "Economic Instability",
+              "text": "The country faced severe financial problems due to wars, poor harvests, and the monarchy’s spending. The price of bread soared, leading to widespread hunger and discontent."
+            },
+            {
+              "title": "Enlightenment Ideology",
+              "text": "Philosophers like Rousseau and Voltaire inspired calls for democracy, liberty, and equality."
+            }
+          ],
+          "major-events": [
+            {
+              "title": "Estates-General (May 1789)",
+              "text": "King Louis XVI called an assembly to address the country's financial crisis, but it ultimately failed to resolve the tension between the estates."
+            },
+            {
+              "title": "National Assembly (June 1789)",
+              "text": "Due to tensions from the Estates-General, the Third Estate declared itself the National Assembly, pledging not to disperse until they gave France a new constitution."
+            },
+            {
+              "title": "Storming of the Bastille (July 14, 1789)",
+              "text": "Angry Parisians stormed the Bastille fortress, a symbol of royal tyranny. The King yielded to this, recognizing the sovereignty of his people, marking the start of the revolution."
+            },
+            {
+              "title": "Declaration of the Rights of Man and of the Citizen (August 26, 1789)",
+              "text": "Document expressing principles of liberty, equality, and fraternity, inspired by Enlightenment ideologies."
+            },
+            {
+              "title": "Women’s March on Versailles (October 1789)",
+              "text": "Concerned over the high price of bread, thousands of women rioted and marched to Versailles, forcing the royals to return to Paris with them."
+            },
+            {
+              "title": "Execution of Louis XVI (January 21, 1793)",
+              "text": "Marked the end of the monarchy and the establishment of the First French Republic. Louis XVI was executed by the guillotine for treason, exhibiting the revolution's radical turn. His execution shocked Europe and increased tensions across other monarchies."
+            },
+            {
+              "title": "Reign of Terror (1793-1794)",
+              "text": "Led by Robespierre, this period saw mass executions of enemies of the revolution, including King Louis XVI and Queen Marie Antoinette. Resulted in the deaths of thousands, including revolutionaries, and created an atmosphere of fear."
+            },
+            {
+              "title": "Fall of Robespierre (July 27, 1794)",
+              "text": "Maximilien Robespierre was arrested and executed by his political rivals. This marked the end of the Reign of Terror and ushered in a more moderate phase of the revolution. The execution represented a rejection of radicalism, and France’s stability rose."
+            },
+            {
+              "title": "Rise of Napoleon Bonaparte (1799)",
+              "text": "Napoleon staged and seized power in a coup d'état, ending the revolutionary government and establishing himself as leader. France transitioned from revolutionary ideals to authoritarian rule."
+            }
+          ],
+          "key-participants": [
+            {
+              "name": "King Louis XVI",
+              "role": "The monarch whose weak leadership and financial mismanagement contributed to the revolution’s outbreak."
+            },
+            {
+              "name": "Marie Antoinette",
+              "role": "The queen, unpopular for her perceived extravagance during times of poverty and financial instability."
+            },
+            {
+              "name": "Maximilien Robespierre",
+              "role": "Radical leader during the Reign of Terror, eventually executed himself."
+            },
+            {
+              "name": "Napoleon Bonaparte",
+              "role": "Military general who seized power through a coup d'état and later became emperor."
+            }
+          ],
+          "outcomes": [
+            {
+              "title": "End of Monarchy",
+              "text": "The revolution abolished the monarchy and established a republic; however, it was later replaced by Napoleon’s rule."
+            },
+            {
+              "title": "Social Class Changes",
+              "text": "The revolution dismantled the traditional class system as the privileges of the nobility and clergy were abolished. Common people gained more rights and opportunities."
+            },
+            {
+              "title": "Spread of Revolutionary Ideals",
+              "text": "The revolution inspired movements for democracy and equality across Europe and the rest of the world."
+            },
+            {
+              "title": "Reforms",
+              "text": "New laws promoted civil equality, freedom of religion, and the end of slavery in French colonies."
+            }
+          ]
+        }
+      ],
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/French_Revolution",
-          "title": "The French Revolution",
-          "author": "Historical Society"
+          "url": "https://byjus.com/free-ias-prep/french-revolution-1789-1799/",
+          "title": "French Revolution",
+          "author": "John Doe"
+        },
+        {
+          "title": "The March on Versailles",
+          "url": "https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/the-march-on-versailles/#:~:text=5%3A%20The%20March%20on%20Versailles,royals%20to%20return%20to%20Paris",
+          "author": "John Doe"
+        },
+        {
+          "title": "Key Events of the French Revolution to Know for European Art and Civilization – 1400 to Present",
+          "url": "https://library.fiveable.me/lists/key-events-of-the-french-revolution",
+          "author": "John Doe"
+        },
+        {
+          "title": "7 Facts about the French Revolution You must know",
+          "url": "https://www.frenchclass.in/blog/facts-on-french-revolution/",
+          "author": "Vibya Goyal"
         }
       ],
       "timeline": [
         {
+          "date": "1789-05-05",
+          "heading": "Estates-General convenes",
+          "text": " King Louis XVI called an assembly to address his country's financial crisis, but it ultimately failed to resolve the tension between the estates.",
+          "place": "Versailles"
+        },
+        {
+          "date": "1789-06",
+          "heading": "National Assembly formed",
+          "text": "Due to tensions from the Estates-General, the Third Estate declared itself as the National Assembly. Pledging not to disperse until they give France a new constitution.",
+          "place": "Paris"
+        },
+        {
           "date": "1789-07-14",
           "heading": "Storming of the Bastille",
-          "text": "The storming of the Bastille prison marks the beginning of the French Revolution.",
+          "text": "Angry Parisians stormed the Bastille fortress, a symbol of royal tyranny. The King yielded to this, recognising the sovereignty of his people, marking the start of the revolution.",
           "place": "Paris"
+        },
+        {
+          "date": "1789-08-26",
+          "heading": "Declaration of the Rights of Man and of the Citizen",
+          "text": "Document expressing principles of liberty, equality and fraternity, inspired by Enlightenment ideologies.",
+          "place": "Paris"
+        },
+        {
+          "date": "1789-10-05",
+          "heading": "Women’s March on Versailles",
+          "text": "Concerned over the high price of bread, thousands of women rioted and marched to Versailles. Forcing the royals to return to Paris with them.",
+          "place": "Versailles"
+        },
+        {
+          "date": "1793-01-21",
+          "heading": "Execution of Louis XVI",
+          "text": "Marked the end of the monarchy and the establishment of the First French Republic. Louis XVI was executed by the guillotine for treason, exhibiting the revolution's radical turn. His execution shocked Europe and increased tensions across other monarchies.",
+          "place": "Paris"
+        },
+        {
+          "date": "1793 - 1794",
+          "heading": "Reign of Terror",
+          "text": "Led by Robespierre, this period saw mass executions of enemies of the revolution, including King Louis XVI and Queen Marie Antoinette. Resulted in the deaths of thousands, including revolutionaries and created an atmosphere of fear.",
+          "place": "France"
+        },
+        {
+          "date": "1794-07-27",
+          "heading": "Fall of Robespierre",
+          "text": "Maximillien Robespierre was arrested and executed by his political rivals. This marked the end of the Reign of Terror into a more moderate phase of the revolution. The execution represented a rejection of radicalism, and France’s stability rose.",
+          "place": "Paris"
+        },
+        {
+          "date": "1799-11-09",
+          "heading": "Rise of Napoleon Bonaparte",
+          "text": "Napoleon staged and seized power in a coup d'état, ending the revolutionary government and establishing himself as leader. France transitioned from revolutionary ideals to authoritarian rule.",
+          "place": "France"
         }
       ]
     },

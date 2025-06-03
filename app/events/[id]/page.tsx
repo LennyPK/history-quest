@@ -1,7 +1,10 @@
 "use client"
 
-import CommentsSheet from "@/components/comments_sheet"
+
+import EventDetails from "@/components/event-details"
 import { ProgressBadge } from "@/components/progress-badge"
+import SourceList from "@/components/source"
+import CommentsSheet from "@/components/comments_sheet"
 import Quiz from "@/components/quiz"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -115,21 +118,14 @@ export default function EventPage({ params }: EventPageProps) {
         </TabsContent>
 
         {/* Details Component*/}
+        {/* Details */}
         <TabsContent value="details" className="mt-6">
-          <Card>
-            <CardContent className="pt-6">
-              <span>Details go here</span>
-            </CardContent>
-          </Card>
+          <EventDetails details={event.details} />
         </TabsContent>
 
         {/* Sources Component*/}
         <TabsContent value="sources" className="mt-6">
-          <Card>
-            <CardContent className="pt-6">
-              <span>Sources go here</span>
-            </CardContent>
-          </Card>
+          <SourceList sources={event.sources} />
         </TabsContent>
 
         {/* Quiz Component*/}
