@@ -11,16 +11,21 @@ export interface HistoricEvent {
   details: Details[]
 }
 
+export type SourceType = "journal" | "newspaper" | "book" | "website" | "video" | "other"
+
 export interface Source {
   url: string
   title: string
   author: string
+  type: SourceType
+  faviconUrl?: string
 }
 
 export interface TimelineEvent {
   date: string
   heading: string
   text: string
+  image: string
   place: string
 }
 

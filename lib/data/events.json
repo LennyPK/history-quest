@@ -142,85 +142,99 @@
         {
           "url": "https://en.wikipedia.org/wiki/World_War_II",
           "title": "The Second World War",
-          "author": "Jane Doe"
+          "author": "Jane Doe",
+          "type": "website"
         },
         {
           "url": "https://en.wikipedia.org/wiki/Causes_of_World_War_II",
           "title": "Causes of World War II",
-          "author": "Wikipedia contributors"
+          "author": "Wikipedia contributors",
+          "type": "website"
         },
         {
           "url": "https://www.worldhistory.org/article/2660/what-were-the-consequences-of-wwii/",
           "title": "What Were the Consequences of WWII?",
-          "author": "World History Encyclopedia"
+          "author": "World History Encyclopedia",
+          "type": "journal"
         },
         {
           "url": "http://www.english-online.at/history/world-war-2/key-figures-of-world-war-ii.htm",
           "title": "Key Figures of World War II",
-          "author": "English Online"
+          "author": "English Online",
+          "type": "website"
         }
       ],
       "timeline": [
         {
-          "date": "1939-09-01",
+          "date": "September 1, 1939",
           "heading": "Germany invades Poland",
           "text": "Germany invades Poland, marking the beginning of World War II.",
+          "image": "/images/world-war-two/poland.jpg",
           "place": "Poland"
         },
         {
-          "date": "1940-06",
+          "date": "June 1940",
           "heading": "Fall of France",
           "text": "Germany quickly conquers France using blitzkrieg tactics. France is divided into German-occupied and Vichy-controlled regions.",
+          "image": "/images/world-war-two/fall-of-france.jpg",
           "place": "France"
         },
         {
-          "date": "1940-07",
+          "date": "July 1940",
           "heading": "Battle of Britain",
-          "text": "The UK successfully resists Germany’s aerial bombing campaign, halting Hitler’s plan to invade Britain.",
+          "text": "The UK successfully resists Germany's aerial bombing campaign, halting Hitler's plan to invade Britain.",
           "place": "United Kingdom",
-          "end_date": "1940-10"
+          "image": "/images/world-war-two/battle-of-britain.jpg",
+          "end_date": "October 1940"
         },
         {
-          "date": "1941-06-22",
+          "date": "June 22, 1941",
           "heading": "Operation Barbarossa",
           "text": "Germany invades the Soviet Union, marking a major turning point. The harsh winter and Soviet resistance stall German advances.",
+          "image": "/images/world-war-two/barbarossa.jpg",
           "place": "Soviet Union"
         },
         {
-          "date": "1941-12-07",
+          "date": "December 7, 1941",
           "heading": "Japan attacks Pearl Harbor",
           "text": "Japan attacks the US naval base in Hawaii, prompting the US to join the war.",
+          "image": "/images/world-war-two/pearl-harbor.jpg",
           "place": "Pearl Harbor"
         },
         {
-          "date": "1942-08",
+          "date": "August 1942",
           "heading": "Battle of Stalingrad",
           "text": "A turning point on the Eastern Front, where the Soviet Union decisively defeats Germany.",
+          "image": "/images/world-war-two/stalingrad.jpg",
           "place": "Stalingrad",
-          "end_date": "1943-02"
+          "end_date": "February 1943"
         },
         {
-          "date": "1944-06-06",
+          "date": "June 6, 1944",
           "heading": "D-Day",
           "text": "Allied forces land in Normandy, France, beginning the liberation of Western Europe from Nazi control.",
+          "image": "/images/world-war-two/d-day.jpg",
           "place": "Normandy"
         },
         {
-          "date": "1945-04",
-          "heading": "Fall of Berlin & Hitler’s Death",
+          "date": "April 1945",
+          "heading": "Fall of Berlin & Hitler's Death",
           "text": "Soviet forces capture Berlin. Hitler commits suicide, and Germany surrenders on May 7, 1945.",
+          "image": "/images/world-war-two/fall-of-berlin.jpg",
           "place": "Berlin"
         },
         {
-          "date": "1945-08-06",
+          "date": "August 6, 1945",
           "heading": "Atomic Bombing of Hiroshima",
           "text": "The US drops an atomic bomb on Hiroshima, Japan.",
+          "image": "/images/world-war-two/hiroshima.jpg",
           "place": "Hiroshima"
         },
         {
-          "date": "1945-08-09",
+          "date": "August 9, 1945",
           "heading": "Atomic Bombing of Nagasaki",
           "text": "The US drops an atomic bomb on Nagasaki, Japan, forcing Japan to surrender on September 2, 1945.",
+          "image": "/images/world-war-two/nagasaki.jpg",
           "place": "Nagasaki"
         }
       ]
