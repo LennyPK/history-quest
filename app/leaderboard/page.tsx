@@ -12,7 +12,7 @@ type LeaderboardUser = {
 
 const initialTopUsers: LeaderboardUser[] = [
   {
-    name: "Ben Dover",
+    name: "Ben Tennyson",
     points: 1250,
     rank: 2,
     profileImage: "/pfp.svg",
@@ -24,7 +24,7 @@ const initialTopUsers: LeaderboardUser[] = [
     profileImage: "/pfp.svg",
   },
   {
-    name: "Buck Nekkid",
+    name: "Percy Jackson",
     points: 1250,
     rank: 3,
     profileImage: "/pfp.svg",
