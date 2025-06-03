@@ -147,7 +147,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-4">
             <Link
               href="/events"
-              className="w-60 rounded bg-black px-4 py-2 font-semibold text-white transition hover:bg-gray-800"
+              className="w-60 rounded bg-black px-4 py-2 font-semibold text-white transition hover:border-black hover:bg-gray-100 hover:text-black"
             >
               Browse All Events
             </Link>
@@ -156,7 +156,7 @@ export default function Home() {
 
             <Link
               href="/history-guesser"
-              className="w-60 rounded bg-black px-4 py-2 font-semibold text-white transition hover:bg-gray-800"
+              className="w-60 rounded bg-black px-4 py-2 font-semibold text-white transition hover:border-black hover:bg-gray-100 hover:text-black"
             >
               Try out HistoryGuesser!
             </Link>

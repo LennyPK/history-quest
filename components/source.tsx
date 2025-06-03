@@ -10,6 +10,7 @@ import {
   FileText,
   Globe,
   Info,
+  Layers,
   MapPin,
   Newspaper,
 } from "lucide-react"
@@ -76,12 +77,30 @@ export default function SourceList({ sources }: SourceListProps) {
       <CardContent className="space-y-4">
         <Tabs defaultValue="all" value={activeTab} onValueChange={setActiveTab}>
           <TabsList className="mb-6 grid w-full grid-cols-6">
-            <TabsTrigger value="all">All ({sources.length})</TabsTrigger>
-            <TabsTrigger value="document">Documents ({documentSources.length})</TabsTrigger>
-            <TabsTrigger value="photo">Photos ({photoSources.length})</TabsTrigger>
-            <TabsTrigger value="newspaper">Press ({newspaperSources.length})</TabsTrigger>
-            <TabsTrigger value="video">Audio/Video ({videoSources.length})</TabsTrigger>
-            <TabsTrigger value="other">Other ({otherSources.length})</TabsTrigger>
+            <TabsTrigger className="flex items-center gap-1" value="all">
+              <Layers className="h-4 w-4" />
+              <span className="hidden sm:inline">All</span> ({sources.length})
+            </TabsTrigger>
+            <TabsTrigger className="flex items-center gap-1" value="document">
+              <FileText className="h-4 w-4" />
+              <span className="hidden sm:inline">Documents</span> ({documentSources.length})
+            </TabsTrigger>
+            <TabsTrigger className="flex items-center gap-1" value="photo">
+              <Camera className="h-4 w-4" />
+              <span className="hidden sm:inline">Photos</span> ({photoSources.length})
+            </TabsTrigger>
+            <TabsTrigger className="flex items-center gap-1" value="newspaper">
+              <Newspaper className="h-4 w-4" />
+              <span className="hidden sm:inline">Press</span> ({newspaperSources.length})
+            </TabsTrigger>
+            <TabsTrigger className="flex items-center gap-1" value="video">
+              <FileAudio className="h-4 w-4" />
+              <span className="hidden sm:inline">Audio/Video</span> ({videoSources.length})
+            </TabsTrigger>
+            <TabsTrigger className="flex items-center gap-1" value="other">
+              <Globe className="h-4 w-4" />
+              <span className="hidden sm:inline">Other</span> ({otherSources.length})
+            </TabsTrigger>
           </TabsList>
 
           {filterSources().length === 0 ? (
