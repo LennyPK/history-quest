@@ -1,18 +1,31 @@
 import { BadgeCheck, Clock, Globe } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link" // Add this import at the top
+import Link from "next/link"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen justify-center">
       <div className="w-full max-w-7xl px-4 text-center">
-        <h1 className="mb-4 text-5xl font-bold">Welcome to HistoryQuest!</h1>
+        <div className="relative mb-12 w-full">
+            <div className="absolute inset-0">
+              <Image
+                src="/images/main-bg.png"
+                alt="Historical classroom"
+                fill
+                className="object-cover brightness-[0.3]"
+                priority
+              />
+            </div>
+            <div className="relative px-4 py-16">
+              <h1 className="mb-4 text-5xl font-bold text-white">Welcome to HistoryQuest!</h1>
+              <p className="mx-auto max-w-2xl text-lg text-gray-200">
+                Discover important events that shaped our world through interactive lessons and quizzes.
+                <br />
+                Select a time period below to begin your journey.
+              </p>
+            </div>
+          </div>
 
-        <p className="mb-8 text-lg">
-          Discover important events that shaped our world through interactive lessons and quizzes.
-          <br />
-          Select a time period below to begin your journey.
-        </p>
         <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2">
           {/* Event Box 1 */}
           <div className="flex flex-col items-center rounded-lg border bg-white p-6 shadow transition">
