@@ -109,7 +109,7 @@ export default function Quiz() {
                       <X className="h-6 w-6 text-red-600" />
                     )}
                   </div>
-                  {!isCorrect && <div className="text-green-700">Correct Answer: {q.answer}</div>}
+                  {/* {!isCorrect && <div className="text-green-700">Correct Answer: {q.answer}</div>} */}
                   <div className="text-muted-foreground text-sm">{q.explanation}</div>
                 </CardContent>
               </Card>

@@ -24,7 +24,7 @@ export function Navbar() {
   const pathname = usePathname()
 
   return (
-    <div className="border-b bg-black text-white">
+    <div className="bg-black text-white">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo and Title */}
         <Link href="/" className="flex items-center gap-2 transition hover:opacity-90">
