@@ -6,7 +6,7 @@
     "hint": "It started in a bakery on a famous lane...",
     "tolerance": 0.01,
     "mapCenter": { "lat": 51.509865, "lng": -0.118092 },
-    "mapZoom": 10
+    "mapZoom": 6
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "answer": { "lat": 52.5163, "lng": 13.3777 },
     "hint": "Near the famous Brandenburg Gate...",
     "tolerance": 0.02,
-    "mapCenter": { "lat": 52.5200, "lng": 13.4050 },
-    "mapZoom": 10
+    "mapCenter": { "lat": 52.52, "lng": 13.405 },
+    "mapZoom": 6
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "hint": "A major port city in southern England...",
     "tolerance": 0.02,
     "mapCenter": { "lat": 50.9, "lng": -1.4 },
-    "mapZoom": 10
+    "mapZoom": 6
   },
   {
     "id": 4,
@@ -42,6 +42,6 @@
     "hint": "In the heart of Paris, France...",
     "tolerance": 0.01,
     "mapCenter": { "lat": 48.8566, "lng": 2.3522 },
-    "mapZoom": 10
+    "mapZoom": 6
   }
 ]
