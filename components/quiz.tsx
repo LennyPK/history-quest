@@ -20,7 +20,11 @@ const shuffleArray = <T,>(array: T[]): T[] => {
   return [...array].sort(() => Math.random() - 0.5)
 }
 
-export default function Quiz() {
+interface QuizProps {
+  eventId: string
+}
+
+export default function Quiz({ eventId }: QuizProps) {
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
@@ -62,6 +66,18 @@ export default function Quiz() {
       setCurrentIndex((prev) => prev + 1)
     } else {
       setQuizFinished(true)
+
+      if (eventId) {
+        const stored = JSON.parse(sessionStorage.getItem("eventProgress") || "{}")
+        const prevData = stored[eventId] || {}
+        stored[eventId] = {
+          ...prevData,
+          maxScore: Math.max(prevData.maxScore || 0, score),
+          attempts: (prevData.attempts || 0) + 1,
+          tabsViewed: prevData.tabsViewed || [],
+        }
+        sessionStorage.setItem("eventProgress", JSON.stringify(stored))
+      }
     }
   }
 

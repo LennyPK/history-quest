@@ -13,7 +13,7 @@ import { getEventById } from "@/lib/utils/events"
 import { ArrowLeft, BookOpen, Clock, Globe, HelpCircle, Newspaper, Trophy } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { use, useState } from "react"
+import { use, useEffect, useState } from "react"
 
 interface EventPageProps {
   params: Promise<{
@@ -30,14 +30,57 @@ export default function EventPage({ params }: EventPageProps) {
   }
 
   const [activeTab, setActiveTab] = useState("timeline")
-  // const [currentScore, setCurrentScore] = useState<number | null>(null)
-  // const [highestScore, setHighestScore] = useState<number | null>(null)
-  // const [attempts, setAttempts] = useState(0)
-  // const [showNewHighScore, setShowNewHighScore] = useState(false)
+  const [tabProgress, setTabProgress] = useState<string[]>([])
 
-  // Mock data for now - in a real app, this would come from a database
-  const highestScore = 8
-  const attempts = 3
+  useEffect(() => {
+    const eventId = event.id
+
+    // Read from sessionStorage
+    const stored = JSON.parse(sessionStorage.getItem("eventProgress") || "{}")
+    const currentTabs = new Set<string>(stored[eventId]?.tabsViewed || [])
+
+    // Always add "timeline" as the default viewed tab on load
+    currentTabs.add("timeline")
+
+    const updated = {
+      ...stored,
+      [eventId]: {
+        ...(stored[eventId] || {}),
+        tabsViewed: Array.from(currentTabs),
+      },
+    }
+    sessionStorage.setItem("eventProgress", JSON.stringify(updated))
+    setTabProgress(Array.from(currentTabs))
+  }, [event.id])
+
+  const handleTabChange = (tab: string) => {
+    setActiveTab(tab)
+    const stored = JSON.parse(sessionStorage.getItem("eventProgress") || "{}")
+    const eventId = event.id
+    const currentTabs = new Set<string>(stored[eventId]?.tabsViewed || [])
+    currentTabs.add(tab)
+
+    const updatedProgress = {
+      ...stored,
+      [eventId]: {
+        ...(stored[eventId] || {}),
+        tabsViewed: Array.from(currentTabs),
+      },
+    }
+    sessionStorage.setItem("eventProgress", JSON.stringify(updatedProgress))
+    setTabProgress(Array.from(currentTabs))
+  }
+
+  const [quizStats, setQuizStats] = useState({ highestScore: 0, attempts: 0 })
+
+  useEffect(() => {
+    const stored = JSON.parse(sessionStorage.getItem("eventProgress") || "{}")
+    const eventStats = stored[event.id] || {}
+    setQuizStats({
+      highestScore: eventStats.maxScore || 0,
+      attempts: eventStats.attempts || 0,
+    })
+  }, [event.id, activeTab])
 
   return (
     <div className="container mx-auto max-w-7xl p-8">
@@ -49,7 +92,6 @@ export default function EventPage({ params }: EventPageProps) {
         <div className="mb-2 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
           <div className="flex flex-row gap-5">
             <h1 className="text-4xl font-bold">{event.name}</h1>
-
             <span className="text-muted-foreground text-s flex items-center gap-1">
               <Clock className="h-4 w-4" />
               {event.date}
@@ -60,24 +102,27 @@ export default function EventPage({ params }: EventPageProps) {
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-yellow-500" />
                 <span className="text-sm font-medium">Highest Score:</span>
-                <ProgressBadge score={highestScore} maxScore={10} />
+                <ProgressBadge score={quizStats.highestScore} maxScore={10} />
+                <span className="text-muted-foreground text-xs">
+                  {quizStats.attempts} {quizStats.attempts === 1 ? "attempt" : "attempts"}
+                </span>
               </div>
-              <span className="text-muted-foreground text-xs">{attempts} attempts</span>
             </div>
           </div>
         </div>
+
         <div className="flex gap-6">
           <p className="text-muted-foreground flex-1 text-xl">{event.blurb}</p>
           <div className="hidden lg:block">
-            <CommentsSheet eventId="global-conflict" />
+            <CommentsSheet eventId={event.id} />
           </div>
         </div>
         <div className="mt-6 lg:hidden">
-          <CommentsSheet eventId="global-conflict" />
+          <CommentsSheet eventId={event.id} />
         </div>
       </div>
 
-      <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-8">
+      <Tabs value={activeTab} onValueChange={handleTabChange} className="mb-8">
         <TabsList className="grid w-full grid-cols-5 md:w-auto">
           <TabsTrigger value="timeline" className="flex items-center gap-2">
             <Clock className="h-4 w-4" />
@@ -101,7 +146,6 @@ export default function EventPage({ params }: EventPageProps) {
           </TabsTrigger>
         </TabsList>
 
-        {/* Timeline Component*/}
         <TabsContent value="timeline" className="mt-6">
           <Card>
             <CardContent>
@@ -110,32 +154,28 @@ export default function EventPage({ params }: EventPageProps) {
           </Card>
         </TabsContent>
 
-        {/* Map Component */}
         <TabsContent value="map" className="mt-6">
           <Card>
             <CardContent className="pt-0">
               <div className="relative h-full w-full">
-                <MapComponent eventId={resolvedParams.id} setActiveTab={setActiveTab} />
+                <MapComponent eventId={event.id} setActiveTab={setActiveTab} />
               </div>
             </CardContent>
           </Card>
         </TabsContent>
 
-        {/* Details Component*/}
         <TabsContent value="details" className="mt-6">
           <EventDetails details={event.details} />
         </TabsContent>
 
-        {/* Sources Component*/}
         <TabsContent value="sources" className="mt-6">
           <SourceList sources={event.sources} />
         </TabsContent>
 
-        {/* Quiz Component*/}
         <TabsContent value="quiz" className="mt-6">
           <Card>
             <CardContent className="pt-6">
-              <Quiz />
+              <Quiz eventId={event.id} />
             </CardContent>
           </Card>
         </TabsContent>

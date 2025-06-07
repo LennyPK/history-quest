@@ -1,6 +1,7 @@
 "use client"
 
-import { BookOpen, User } from "lucide-react" // Import icons
+import { UserDropdown } from "@/components/ui/user-dropdown"
+import { BookOpen } from "lucide-react" // Import icons
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -57,10 +58,7 @@ export function Navbar() {
 
         {/* User Account */}
         <div className="flex items-center gap-2">
-          <span className="text-sm">History Explorer</span>
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700">
-            <User className="h-5 w-5" />
-          </div>
+          <UserDropdown />
         </div>
       </div>
     </div>
