@@ -11,7 +11,9 @@ import { useEffect, useState } from "react"
 
 export default function ProfilePage() {
   const [points, setPoints] = useState<number>(0)
-  const [progressData, setProgressData] = useState<Record<string, { tabsViewed: string[]; maxScore?: number; attempts?: number }>>({})
+  const [progressData, setProgressData] = useState<
+    Record<string, { tabsViewed: string[]; maxScore?: number; attempts?: number }>
+  >({})
   const router = useRouter()
 
   useEffect(() => {
@@ -50,33 +52,29 @@ export default function ProfilePage() {
           {Object.entries(progressData).length === 0 ? (
             <p className="text-sm text-gray-500">No progress yet.</p>
           ) : (
-            Object.entries(progressData).map(([eventId, eventData]) => { 
-              const eventMeta = getEventById(eventId);
-              const { tabsViewed = [], maxScore = 0, attempts = 0 } = eventData;
+            Object.entries(progressData).map(([eventId, eventData]) => {
+              const eventMeta = getEventById(eventId)
+              const { tabsViewed = [], maxScore = 0, attempts = 0 } = eventData
 
               return (
-                <Link
-                  key={eventId}
-                  href={`/events/${eventId}`}
-                  className="block"
-                >
-                  <Card className="mb-5 transition-shadow hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer">
-                    <CardContent className="flex gap-4 p-2 items-center">
+                <Link key={eventId} href={`/events/${eventId}`} className="block">
+                  <Card className="mb-5 cursor-pointer transition-shadow hover:-translate-y-0.5 hover:shadow-2xl">
+                    <CardContent className="flex items-center gap-4 p-2">
                       <img
                         src={eventMeta?.imageUrl}
                         alt={eventMeta?.name || eventId.replace(/-/g, " ")}
-                        className="h-25 w-25 rounded-md object-cover border"
+                        className="h-25 w-25 rounded-md border object-cover"
                       />
-                      <div className="flex-1 min-w-0">
-                        <h4 className="font-medium capitalize text-gray-800 text-lg truncate">
+                      <div className="min-w-0 flex-1">
+                        <h4 className="truncate text-lg font-medium capitalize text-gray-800">
                           {eventMeta?.name || eventId.replace(/-/g, " ")}
                         </h4>
                         <Progress value={(tabsViewed.length / 5) * 100} className="my-1" />
-                        <p className="text-xs text-gray-500 mb-1">
+                        <p className="mb-1 text-xs text-gray-500">
                           {tabsViewed.length} of 5 tabs completed
                         </p>
                         {typeof maxScore === "number" && (
-                          <div className="flex items-center gap-2 mb-1">
+                          <div className="mb-1 flex items-center gap-2">
                             <Trophy className="h-5 w-5 text-yellow-500" />
                             <span className="text-sm font-medium">Highest Score:</span>
                             <ProgressBadge score={maxScore} maxScore={10} />
@@ -86,14 +84,10 @@ export default function ProfilePage() {
                     </CardContent>
                   </Card>
                 </Link>
-
               )
-              
             })
           )}
         </div>
-
-
       </div>
     </div>
   )

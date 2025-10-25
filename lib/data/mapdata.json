@@ -59,7 +59,7 @@
         "id": "battle-stalingrad",
         "title": "Battle of Stalingrad",
         "date": "August 23, 1942 - February 2, 1943",
-        "location": { "lat": 48.7080, "lng": 44.5133 },
+        "location": { "lat": 48.708, "lng": 44.5133 },
         "description": "Brutal urban warfare that became a turning point on the Eastern Front. German 6th Army was completely destroyed.",
         "type": "siege",
         "participants": ["Germany", "Soviet Union"],
@@ -119,7 +119,7 @@
         "id": "battle-berlin",
         "title": "Battle of Berlin",
         "date": "April 16 - May 2, 1945",
-        "location": { "lat": 52.5200, "lng": 13.4050 },
+        "location": { "lat": 52.52, "lng": 13.405 },
         "description": "Final major battle in Europe. Soviet forces capture Berlin, leading to Hitler's suicide and Germany's surrender.",
         "type": "siege",
         "participants": ["Soviet Union", "Germany"],
@@ -158,112 +158,115 @@
     ]
   },
   "french-revolution": {
-  "title": "The French Revolution (1789–1799)",
-  "description": "Major events and turning points of the French Revolution",
-  "mapCenter": { "lat": 46.6034, "lng": 1.8883 },
-  "mapZoom": 6,
-  "events": [
-    {
-      "id": "estates-general",
-      "title": "Estates-General Assembly",
-      "date": "May 1789",
-      "location": { "lat": 48.8044, "lng": 2.1232 },
-      "description": "King Louis XVI called an assembly at Versailles to address France's financial crisis, but it ultimately failed to resolve tensions between the estates.",
-      "type": "assembly",
-      "participants": ["First Estate (Clergy)", "Second Estate (Nobility)", "Third Estate (Commoners)"],
-      "casualties": "No casualties - political event"
-    },
-    {
-      "id": "national-assembly",
-      "title": "Formation of National Assembly",
-      "date": "June 1789",
-      "location": { "lat": 48.8035, "lng": 2.1240 },
-      "description": "The Third Estate declared itself as the National Assembly, pledging not to disperse until they gave France a new constitution.",
-      "type": "political-formation",
-      "participants": ["Third Estate", "Some clergy and nobles"],
-      "casualties": "No casualties - political event"
-    },
-    {
-      "id": "storming-bastille",
-      "title": "Storming of the Bastille",
-      "date": "July 14, 1789",
-      "location": { "lat": 48.8532, "lng": 2.3692 },
-      "description": "Angry Parisians stormed the Bastille fortress, a symbol of royal tyranny. This marked the start of the revolution as the King recognized the sovereignty of his people.",
-      "type": "uprising",
-      "participants": ["Parisian citizens", "Royal guards"],
-      "casualties": "~100 attackers killed, 7 guards killed"
-    },
-    {
-      "id": "declaration-rights",
-      "title": "Declaration of Rights of Man and Citizen",
-      "date": "August 26, 1789",
-      "location": { "lat": 48.8026, "lng": 2.1250 },
-      "description": "Document expressing principles of liberty, equality and fraternity, inspired by Enlightenment ideologies.",
-      "type": "declaration",
-      "participants": ["National Assembly"],
-      "casualties": "No casualties - legislative event"
-    },
-    {
-      "id": "womens-march",
-      "title": "Women's March on Versailles",
-      "date": "October 5-6, 1789",
-      "location": { "lat": 48.8017, "lng": 2.1260 },
-      "description": "Concerned over the high price of bread, thousands of women rioted and marched to Versailles, forcing the royal family to return to Paris.",
-      "type": "march",
-      "participants": ["Thousands of Parisian women", "National Guard", "Royal family"],
-      "casualties": "Several killed in confrontations"
-    },
-    {
-      "id": "execution-louis-xvi",
-      "title": "Execution of King Louis XVI",
-      "date": "January 21, 1793",
-      "location": { "lat": 48.8570, "lng": 2.3520 },
-      "description": "Marked the end of the monarchy and establishment of the First French Republic. Louis XVI was executed by guillotine for treason, shocking Europe.",
-      "type": "execution",
-      "participants": ["Revolutionary government", "King Louis XVI"],
-      "casualties": "King Louis XVI executed"
-    },
-    {
-      "id": "reign-of-terror-start",
-      "title": "Beginning of Reign of Terror",
-      "date": "September 1793",
-      "location": { "lat": 48.8560, "lng": 2.3530 },
-      "description": "Led by Robespierre, this period saw mass executions of enemies of the revolution, creating an atmosphere of fear across France.",
-      "type": "reign-of-terror",
-      "participants": ["Committee of Public Safety", "Jacobins", "Various accused"],
-      "casualties": "~17,000 officially executed during the Terror"
-    },
-    {
-      "id": "execution-marie-antoinette",
-      "title": "Execution of Marie Antoinette",
-      "date": "October 16, 1793",
-      "location": { "lat": 48.8550, "lng": 2.3540 },
-      "description": "Queen Marie Antoinette, unpopular for her perceived extravagance during times of poverty, was executed by guillotine.",
-      "type": "execution",
-      "participants": ["Revolutionary government", "Queen Marie Antoinette"],
-      "casualties": "Queen Marie Antoinette executed"
-    },
-    {
-      "id": "fall-robespierre",
-      "title": "Fall of Robespierre",
-      "date": "July 27, 1794",
-      "location": { "lat": 48.8540, "lng": 2.3550 },
-      "description": "Maximilien Robespierre was arrested and executed by his political rivals, ending the Reign of Terror and beginning a more moderate phase.",
-      "type": "execution",
-      "participants": ["Thermidorian Reaction", "Robespierre and supporters"],
-      "casualties": "Robespierre and 21 supporters executed"
-    },
-    {
-      "id": "napoleon-coup",
-      "title": "Napoleon's Coup d'État",
-      "date": "November 9, 1799",
-      "location": { "lat": 48.8530, "lng": 2.3560 },
-      "description": "Napoleon Bonaparte staged a coup and seized power, ending the revolutionary government and establishing himself as leader, transitioning France from revolutionary ideals to authoritarian rule.",
-      "type": "coup",
-      "participants": ["Napoleon Bonaparte", "Military supporters", "Directory government"],
-      "casualties": "Minimal casualties - bloodless coup"
-    }
-  ]
-}
-
+    "title": "The French Revolution (1789–1799)",
+    "description": "Major events and turning points of the French Revolution",
+    "mapCenter": { "lat": 46.6034, "lng": 1.8883 },
+    "mapZoom": 6,
+    "events": [
+      {
+        "id": "estates-general",
+        "title": "Estates-General Assembly",
+        "date": "May 1789",
+        "location": { "lat": 48.8044, "lng": 2.1232 },
+        "description": "King Louis XVI called an assembly at Versailles to address France's financial crisis, but it ultimately failed to resolve tensions between the estates.",
+        "type": "assembly",
+        "participants": [
+          "First Estate (Clergy)",
+          "Second Estate (Nobility)",
+          "Third Estate (Commoners)"
+        ],
+        "casualties": "No casualties - political event"
+      },
+      {
+        "id": "national-assembly",
+        "title": "Formation of National Assembly",
+        "date": "June 1789",
+        "location": { "lat": 48.8035, "lng": 2.124 },
+        "description": "The Third Estate declared itself as the National Assembly, pledging not to disperse until they gave France a new constitution.",
+        "type": "political-formation",
+        "participants": ["Third Estate", "Some clergy and nobles"],
+        "casualties": "No casualties - political event"
+      },
+      {
+        "id": "storming-bastille",
+        "title": "Storming of the Bastille",
+        "date": "July 14, 1789",
+        "location": { "lat": 48.8532, "lng": 2.3692 },
+        "description": "Angry Parisians stormed the Bastille fortress, a symbol of royal tyranny. This marked the start of the revolution as the King recognized the sovereignty of his people.",
+        "type": "uprising",
+        "participants": ["Parisian citizens", "Royal guards"],
+        "casualties": "~100 attackers killed, 7 guards killed"
+      },
+      {
+        "id": "declaration-rights",
+        "title": "Declaration of Rights of Man and Citizen",
+        "date": "August 26, 1789",
+        "location": { "lat": 48.8026, "lng": 2.125 },
+        "description": "Document expressing principles of liberty, equality and fraternity, inspired by Enlightenment ideologies.",
+        "type": "declaration",
+        "participants": ["National Assembly"],
+        "casualties": "No casualties - legislative event"
+      },
+      {
+        "id": "womens-march",
+        "title": "Women's March on Versailles",
+        "date": "October 5-6, 1789",
+        "location": { "lat": 48.8017, "lng": 2.126 },
+        "description": "Concerned over the high price of bread, thousands of women rioted and marched to Versailles, forcing the royal family to return to Paris.",
+        "type": "march",
+        "participants": ["Thousands of Parisian women", "National Guard", "Royal family"],
+        "casualties": "Several killed in confrontations"
+      },
+      {
+        "id": "execution-louis-xvi",
+        "title": "Execution of King Louis XVI",
+        "date": "January 21, 1793",
+        "location": { "lat": 48.857, "lng": 2.352 },
+        "description": "Marked the end of the monarchy and establishment of the First French Republic. Louis XVI was executed by guillotine for treason, shocking Europe.",
+        "type": "execution",
+        "participants": ["Revolutionary government", "King Louis XVI"],
+        "casualties": "King Louis XVI executed"
+      },
+      {
+        "id": "reign-of-terror-start",
+        "title": "Beginning of Reign of Terror",
+        "date": "September 1793",
+        "location": { "lat": 48.856, "lng": 2.353 },
+        "description": "Led by Robespierre, this period saw mass executions of enemies of the revolution, creating an atmosphere of fear across France.",
+        "type": "reign-of-terror",
+        "participants": ["Committee of Public Safety", "Jacobins", "Various accused"],
+        "casualties": "~17,000 officially executed during the Terror"
+      },
+      {
+        "id": "execution-marie-antoinette",
+        "title": "Execution of Marie Antoinette",
+        "date": "October 16, 1793",
+        "location": { "lat": 48.855, "lng": 2.354 },
+        "description": "Queen Marie Antoinette, unpopular for her perceived extravagance during times of poverty, was executed by guillotine.",
+        "type": "execution",
+        "participants": ["Revolutionary government", "Queen Marie Antoinette"],
+        "casualties": "Queen Marie Antoinette executed"
+      },
+      {
+        "id": "fall-robespierre",
+        "title": "Fall of Robespierre",
+        "date": "July 27, 1794",
+        "location": { "lat": 48.854, "lng": 2.355 },
+        "description": "Maximilien Robespierre was arrested and executed by his political rivals, ending the Reign of Terror and beginning a more moderate phase.",
+        "type": "execution",
+        "participants": ["Thermidorian Reaction", "Robespierre and supporters"],
+        "casualties": "Robespierre and 21 supporters executed"
+      },
+      {
+        "id": "napoleon-coup",
+        "title": "Napoleon's Coup d'État",
+        "date": "November 9, 1799",
+        "location": { "lat": 48.853, "lng": 2.356 },
+        "description": "Napoleon Bonaparte staged a coup and seized power, ending the revolutionary government and establishing himself as leader, transitioning France from revolutionary ideals to authoritarian rule.",
+        "type": "coup",
+        "participants": ["Napoleon Bonaparte", "Military supporters", "Directory government"],
+        "casualties": "Minimal casualties - bloodless coup"
+      }
+    ]
+  }
 }

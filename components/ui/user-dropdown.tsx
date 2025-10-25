@@ -32,7 +32,7 @@ export function UserDropdown() {
     <div ref={ref} className="relative inline-block text-left">
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="flex items-center gap-2 rounded-full px-2 py-1 text-white transition cursor-pointer"
+        className="flex cursor-pointer items-center gap-2 rounded-full px-2 py-1 text-white transition"
       >
         {/* Plain text with no background */}
         <span className="text-sm text-white">History Explorer</span>
@@ -51,7 +51,7 @@ export function UserDropdown() {
 
           <button
             type="button"
-            className="flex items-center w-full gap-2 px-4 py-2 text-left hover:bg-gray-100 cursor-not-allowed transition"
+            className="flex w-full cursor-not-allowed items-center gap-2 px-4 py-2 text-left transition hover:bg-gray-100"
           >
             Settings
           </button>
@@ -59,7 +59,7 @@ export function UserDropdown() {
           <hr className="my-1" />
           <button
             onClick={handleLogout}
-            className="w-full px-4 py-2 text-left text-red-500 hover:bg-red-100 cursor-pointer"
+            className="w-full cursor-pointer px-4 py-2 text-left text-red-500 hover:bg-red-100"
           >
             Log out
           </button>
